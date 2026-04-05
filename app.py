@@ -28,7 +28,7 @@ current_test = {
 }
 
 REPORTS_FILE = "reports.json"
-BRIGHTNESS_THRESHOLDS = [30, 55, 80, 100, 120]
+BRIGHTNESS_THRESHOLDS = [60, 90, 110, 110, 120]
 
 def load_reports():
     if os.path.exists(REPORTS_FILE):
