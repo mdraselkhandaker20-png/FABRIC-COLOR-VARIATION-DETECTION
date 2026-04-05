@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="report-page">
+    <div class="report-header">
+        <div class="report-title">TEST REPORT</div>
+        <div class="report-fabric">{{ report.fabric_name }}</div>
+        <div class="report-date">{{ report.date }}</div>
+    </div>
+
+    <div class="report-stats">
+        <div class="rstat good">
+            <div class="rstat-pct">{{ report.pct_good }}%</div>
+            <div class="rstat-lbl">COLOR SAME</div>
+            <div class="rstat-count">{{ report.same }} readings</div>
+        </div>
+        <div class="rstat bad">
+            <div class="rstat-pct">{{ report.pct_bad }}%</div>
+            <div class="rstat-lbl">COLOR DEFECT</div>
+            <div class="rstat-count">{{ report.not_same }} readings</div>
+        </div>
+        <div class="rstat neu">
+            <div class="rstat-pct">{{ report.total_readings }}</div>
+            <div class="rstat-lbl">TOTAL READINGS</div>
+            <div class="rstat-count">{{ report.duration }}s test</div>
+        </div>
+        <div class="rstat neu">
+            <div class="rstat-pct">{{ report.avg_diff }}</div>
+            <div class="rstat-lbl">AVG DELTA E</div>
+            <div class="rstat-count">color variance</div>
+        </div>
+    </div>
+
+    <div class="verdict {{ 'pass' if report.pct_good >= 80 else 'fail' }}">
+        {% if report.pct_good >= 90 %}
+        ★ EXCELLENT — Color consistency outstanding
+        {% elif report.pct_good >= 80 %}
+        ✓ FABRIC PASSED — Color consistency acceptable
+        {% else %}
+        ✗ FABRIC FAILED — Color inconsistency detected
+        {% endif %}
+    </div>
+
+    <div class="report-chart-wrap">
+        <div class="graph-label">COLOR DIFFERENCE OVER TIME</div>
+        <canvas id="reportGraph" height="140"></canvas>
+    </div>
+
+    <div class="report-actions">
+        <button class="btn-back" onclick="history.back()">← BACK</button>
+        <button class="btn-again" onclick="window.location='/check_color'">CHECK AGAIN</button>
+        <button class="btn-delete" onclick="deleteReport({{ report.id }})">DELETE</button>
+    </div>
+</div>
+
+<script>
+const readings = {{ report.readings | tojson }};
+const canvas = document.getElementById('reportGraph');
+const ctx = canvas.getContext('2d');
+canvas.width = canvas.parentElement.offsetWidth - 32;
+const w = canvas.width, h = 140;
+const maxDiff = 40, THRESHOLD = 15;
+ctx.fillStyle = '#f8f7f5'; ctx.fillRect(0,0,w,h);
+const ty = h - (THRESHOLD/maxDiff)*h;
+ctx.strokeStyle='rgba(239,68,68,0.4)'; ctx.setLineDash([6,4]); ctx.lineWidth=1.5;
+ctx.beginPath(); ctx.moveTo(0,ty); ctx.lineTo(w,ty); ctx.stroke();
+ctx.setLineDash([]); ctx.fillStyle='rgba(239,68,68,0.5)'; ctx.font='11px monospace';
+ctx.fillText('THRESHOLD', w-85, ty-5);
+if(readings.length > 1){
+    const step = w/(readings.length-1);
+    ctx.beginPath(); ctx.lineWidth=2; ctx.strokeStyle='#2d5a3d';
+    readings.forEach((r,i)=>{ const x=i*step,y=h-(Math.min(r.diff,maxDiff)/maxDiff)*h; i===0?ctx.moveTo(x,y):ctx.lineTo(x,y); });
+    ctx.stroke();
+    readings.forEach((r,i)=>{ const x=i*step,y=h-(Math.min(r.diff,maxDiff)/maxDiff)*h; ctx.beginPath(); ctx.arc(x,y,3,0,Math.PI*2); ctx.fillStyle=r.status==='same'?'#22c55e':'#ef4444'; ctx.fill(); });
+}
+function deleteReport(id) {
+    if (!confirm("Delete this report?")) return;
+    fetch("/reports/" + id, { method: "DELETE" })
+        .then(r => r.json())
+        .then(() => window.location = "/check_color");
+}
+</script>
+{% endblock %}

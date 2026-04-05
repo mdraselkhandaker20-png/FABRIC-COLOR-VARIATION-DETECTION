@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="dashboard">
+
+    <div class="top-row">
+        <div class="sec-lbl">CHECKING COLOR</div>
+        <div class="fabric-display" id="fabricDisplay">—</div>
+    </div>
+
+    <div class="inp-row">
+        <div class="ig">
+            <label>FABRIC NAME</label>
+            <input type="text" class="field" id="fabricNameInput" placeholder="e.g. Green 220 GSM" />
+        </div>
+        <div class="ig sm">
+            <label>DURATION (SEC)</label>
+            <input type="number" class="field" id="durationInput" value="30" min="5" max="300" />
+        </div>
+        <div class="ig sm">
+            <label>CAMERA SOURCE</label>
+            <div class="cam-select-wrap">
+                <div class="cam-option active" id="camOpt0" onclick="selectCam(0)">
+                    <span class="cam-opt-icon">💻</span>
+                    <span>Laptop</span>
+                </div>
+                <div class="cam-option" id="camOpt1" onclick="selectCam(1)">
+                    <span class="cam-opt-icon">🔌</span>
+                    <span>USB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ctrl-row">
+        <button class="btn3d start" id="btnStart" onclick="startDetection()">
+            <span class="bindi" id="startBindi"></span> START
+        </button>
+        <button class="btn3d stop" id="btnStop" onclick="stopDetection()">
+            <span class="bindi red" id="stopBindi"></span> STOP
+        </button>
+        <button class="btn3d refresh" id="btnRefresh" onclick="refreshSystem()">
+            ↺ REFRESH
+        </button>
+        <div class="ctrl-spacer"></div>
+        <div class="light-group">
+            <div class="light-badge checking" id="lightBadge">
+                <span class="lbd" id="lightDot"></span>
+                <span id="lightTxt">CHECKING...</span>
+            </div>
+            <div class="light-sep"></div>
+            <div class="dots-wrap">
+                <div class="ld dim" id="ld1"></div>
+                <div class="ld dim" id="ld2"></div>
+                <div class="ld dim" id="ld3"></div>
+                <div class="ld dim" id="ld4"></div>
+                <div class="ld dim" id="ld5"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cam-container">
+        <div class="cam-frame">
+            <img id="previewFeed" src="" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            <img id="videoFeed" src="" style="display:none;width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;" />
+            <div class="cam-scan" id="camScan"></div>
+            <div class="cam-name" id="camFabricName"></div>
+            <div class="cam-timer" id="camTimer" style="display:none;">30s</div>
+            <div class="light-warn" id="lightWarn" style="display:none;">⚠ LIGHT LOW — CHECKING PAUSED</div>
+        </div>
+    </div>
+
+    <div class="qbar-wrap">
+        <div class="qbar-top">
+            <div class="qbar-lbl">QUALITY SCORE</div>
+            <div class="qbar-mid">Min acceptable: <span>80%</span></div>
+            <div class="qbar-val" id="qbarVal">— %</div>
+        </div>
+        <div class="qbar-bg">
+            <div class="qbar-fill" id="qbarFill" style="width:0%"></div>
+            <div class="qbar-m80"></div>
+            <span class="qbar-m80-lbl">80% Good</span>
+            <div class="qbar-m90"></div>
+            <span class="qbar-m90-lbl">90% Excellent</span>
+        </div>
+    </div>
+
+    <div class="sg-row">
+        <div class="stats-col">
+            <div class="sc good">
+                <div class="sc-pct" id="scGoodPct">0%</div>
+                <div class="sc-lbl" id="scGoodLbl">GOOD</div>
+            </div>
+            <div class="sc bad">
+                <div class="sc-pct" id="scBadPct">0%</div>
+                <div class="sc-lbl">DEFECT</div>
+            </div>
+            <div class="sc neu">
+                <div class="sc-pct" id="scTotal">0</div>
+                <div class="sc-lbl">TOTAL</div>
+            </div>
+        </div>
+        <div class="graph-card">
+            <div class="graph-title">COLOR DIFFERENCE — LIVE</div>
+            <canvas id="colorGraph"></canvas>
+        </div>
+    </div>
+
+</div>
+
+<!-- Report Modal -->
+<div class="modal-overlay" id="reportModal" style="display:none;">
+    <div class="modal-box">
+        <div class="modal-title">TEST COMPLETE</div>
+        <div class="modal-fabric" id="modalFabric">—</div>
+        <div class="modal-stats">
+            <div class="modal-stat good"><span class="ms-pct" id="modalGoodPct">—</span><span class="ms-lbl">GOOD</span></div>
+            <div class="modal-stat bad"><span class="ms-pct" id="modalBadPct">—</span><span class="ms-lbl">DEFECT</span></div>
+        </div>
+        <div class="modal-verdict" id="modalVerdict">—</div>
+        <div class="modal-actions">
+            <button class="btn-modal-view" id="modalViewBtn">VIEW REPORT</button>
+            <button class="btn-modal-again" id="modalAgainBtn">CHECK AGAIN</button>
+            <button class="btn-modal-close" onclick="closeModal()">CLOSE</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/color_check.js') }}"></script>
+{% endblock %}

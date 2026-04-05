@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabric Color Detection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sb-top">
+                <div class="sb-logo-icon">⬡</div>
+                <div class="sb-logo-text">EXPORT<br>COMPANY</div>
+            </div>
+            <nav class="sb-nav">
+                <a href="/check_color" class="sb-item {% if request.path == '/check_color' or request.path == '/' %}active{% endif %}">
+                    <span class="sb-dot {% if request.path == '/check_color' or request.path == '/' %}active{% endif %}"></span> CHECK COLOR
+                </a>
+                <a href="/check_gsm" class="sb-item {% if request.path == '/check_gsm' %}active{% endif %}">
+                    <span class="sb-dot {% if request.path == '/check_gsm' %}active{% endif %}"></span> CHECK GSM
+                </a>
+            </nav>
+            <div class="sb-section">HISTORY</div>
+            <div class="hist" id="historyList">
+                <div class="hist-loading">No tests yet</div>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="topbar">
+                <h1 class="topbar-title">FABRIC COLOR DETECTION</h1>
+            </header>
+            <div class="content-area">
+                {% block content %}{% endblock %}
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
