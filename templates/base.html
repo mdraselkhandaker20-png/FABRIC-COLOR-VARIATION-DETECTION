@@ -13,7 +13,7 @@
         <aside class="sidebar">
             <div class="sb-top">
                 <div class="sb-logo-icon">⬡</div>
-                <div class="sb-logo-text">EXPORT<br>COMPANY</div>
+                <div class="sb-logo-text">FABRIC QC<br>VISION LAB</div>
             </div>
             <nav class="sb-nav">
                 <a href="/check_color" class="sb-item {% if request.path == '/check_color' or request.path == '/' %}active{% endif %}">
@@ -23,14 +23,14 @@
                     <span class="sb-dot {% if request.path == '/check_gsm' %}active{% endif %}"></span> CHECK GSM
                 </a>
             </nav>
-            <div class="sb-section">HISTORY</div>
+            <div class="sb-section">TEST HISTORY</div>
             <div class="hist" id="historyList">
                 <div class="hist-loading">No tests yet</div>
             </div>
         </aside>
         <main class="main-content">
             <header class="topbar">
-                <h1 class="topbar-title">FABRIC COLOR DETECTION</h1>
+                <h1 class="topbar-title">FABRIC COLOR VARIATION DETECTION</h1>
             </header>
             <div class="content-area">
                 {% block content %}{% endblock %}

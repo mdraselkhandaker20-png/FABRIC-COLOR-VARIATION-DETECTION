@@ -4,26 +4,28 @@ let timerInterval = null;
 let graphData = [];
 let testDuration = 30;
 let elapsed = 0;
-let selectedCam = 0;
 const THRESHOLD = 15;
 
 const canvas = document.getElementById('colorGraph');
 const ctx = canvas ? canvas.getContext('2d') : null;
 
-// ── Camera select ─────────────────────────────────────────────
-function selectCam(idx) {
-    selectedCam = idx;
-    document.getElementById('camOpt0').classList.toggle('active', idx === 0);
-    document.getElementById('camOpt1').classList.toggle('active', idx === 1);
-    // restart preview with new camera
-    startPreview();
+// ── Keep the graph canvas filling its card at native resolution ────
+// (the card's height now flexes with the viewport, so this is measured
+// live instead of using a fixed CSS height)
+function sizeGraphCanvas() {
+    if (!canvas || !canvas.parentElement) return;
+    const rect = canvas.parentElement.getBoundingClientRect();
+    canvas.width = Math.max(50, rect.width - 26);
+    canvas.height = Math.max(40, rect.height - 30);
+    drawGraph();
 }
+window.addEventListener('resize', sizeGraphCanvas);
 
-// ── Preview (always on) ───────────────────────────────────────
+// ── Preview (always on, single USB camera) ─────────────────────
 function startPreview() {
     const preview = document.getElementById('previewFeed');
     if (preview) {
-        preview.src = '/preview_feed?cam=' + selectedCam + '&t=' + Date.now();
+        preview.src = '/preview_feed?t=' + Date.now();
         preview.style.display = 'block';
     }
 }
@@ -74,11 +76,12 @@ function startDetection() {
         return;
     }
     testDuration = parseInt(document.getElementById('durationInput').value) || 30;
+    const lightSource = (document.getElementById('lightSourceInput') || {}).value || '';
 
     fetch('/start', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ fabric_name: fabricName, duration: testDuration, camera_index: selectedCam })
+        body: JSON.stringify({ fabric_name: fabricName, duration: testDuration, light_source: lightSource })
     }).then(r => r.json()).then(d => {
         if (d.status === 'light_low') {
             alert('Light not OK! Please ensure proper lighting before starting.');
@@ -114,7 +117,7 @@ function startDetection() {
             document.getElementById('camTimer').textContent = rem + 's';
         }, 1000);
 
-        if (canvas) canvas.width = (canvas.parentElement?.offsetWidth || 400) - 24;
+        sizeGraphCanvas();
         statusInterval = setInterval(pollStatus, 400);
     });
 }
@@ -253,10 +256,10 @@ function closeModal() {
 
 // ── Graph ─────────────────────────────────────────────────────
 function drawGraph() {
-    if (!ctx || !canvas || graphData.length < 2) return;
-    const w = canvas.width, h = canvas.height || 90;
-    canvas.height = h;
+    if (!ctx || !canvas) return;
+    const w = canvas.width, h = canvas.height;
     ctx.clearRect(0, 0, w, h);
+    if (graphData.length < 2) return;
     ctx.fillStyle = '#f8f7f5'; ctx.fillRect(0, 0, w, h);
     const maxDiff = 40;
     const ty = h - (THRESHOLD / maxDiff) * h;
@@ -282,7 +285,7 @@ function drawGraph() {
 // ── Init ──────────────────────────────────────────────────────
 window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('stopBindi').className = 'bindi red';
-    if (canvas) canvas.width = (canvas.parentElement?.offsetWidth || 400) - 24;
+    sizeGraphCanvas();
     startPreview();
     startLightMonitor();
 });

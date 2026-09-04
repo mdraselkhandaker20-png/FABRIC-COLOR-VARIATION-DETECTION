@@ -12,22 +12,17 @@
             <label>FABRIC NAME</label>
             <input type="text" class="field" id="fabricNameInput" placeholder="e.g. Green 220 GSM" />
         </div>
+        <div class="ig">
+            <label>LIGHT SOURCE (OPTIONAL)</label>
+            <input type="text" class="field" id="lightSourceInput" placeholder="e.g. D65 6500K LED booth" />
+        </div>
         <div class="ig sm">
             <label>DURATION (SEC)</label>
             <input type="number" class="field" id="durationInput" value="30" min="5" max="300" />
         </div>
         <div class="ig sm">
-            <label>CAMERA SOURCE</label>
-            <div class="cam-select-wrap">
-                <div class="cam-option active" id="camOpt0" onclick="selectCam(0)">
-                    <span class="cam-opt-icon">💻</span>
-                    <span>Laptop</span>
-                </div>
-                <div class="cam-option" id="camOpt1" onclick="selectCam(1)">
-                    <span class="cam-opt-icon">🔌</span>
-                    <span>USB</span>
-                </div>
-            </div>
+            <label>CAMERA</label>
+            <div class="cam-badge">🔌 USB CAMERA</div>
         </div>
     </div>
 
@@ -57,7 +52,7 @@
             </div>
         </div>
     </div>
-        
+
     <div class="cam-container">
         <div class="cam-frame">
             <img id="previewFeed" src="" style="width:100%;height:100%;object-fit:cover;display:block;" />
@@ -100,7 +95,7 @@
             </div>
         </div>
         <div class="graph-card">
-            <div class="graph-title">COLOR DIFFERENCE — LIVE</div>
+            <div class="graph-title">COLOR DIFFERENCE (ΔE) — LIVE</div>
             <canvas id="colorGraph"></canvas>
         </div>
     </div>

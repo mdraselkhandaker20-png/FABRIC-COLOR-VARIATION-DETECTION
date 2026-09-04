@@ -1,5 +1,9030 @@
 [
   {
+    "id": 1788526788,
+    "fabric_name": "drtgy",
+    "light_source": "",
+    "operator": "",
+    "date": "2026-09-04 20:59:18",
+    "duration": 30,
+    "total_readings": 899,
+    "same": 803,
+    "not_same": 96,
+    "pct_good": 89.3,
+    "pct_bad": 10.7,
+    "avg_diff": 5.2,
+    "std_diff": 12.08,
+    "max_diff": 51.05,
+    "min_diff": 0.0,
+    "delta_e_threshold": 15,
+    "delta_e_method": "CIE76 (Lab space)",
+    "readings": [
+      {
+        "time": 1788526758.2227278,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.244675,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.2606301,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.2787807,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.2945216,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.3114316,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.344469,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.3771596,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.4090433,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.4468677,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.4777834,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.5089765,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.5432112,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.577237,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.6106315,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.6292834,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.6616082,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.693994,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.7256203,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.775453,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.8101606,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.8423803,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.8756416,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.8942604,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.9273489,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.9583905,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526758.9959877,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.0269842,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.059392,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.0926366,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.1267898,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.2110858,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.2274237,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.243225,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.2784717,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.3121822,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.343019,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.3782926,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.39502,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.4263341,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.4602623,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.4920745,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.5275953,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.5644743,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.648132,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.6656575,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.6795154,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.709379,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.7290428,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.7623844,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.7977526,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.8298502,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.8614323,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.89577,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.9278011,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526759.962888,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.0271556,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.0600133,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.0749605,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.0908895,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.1268926,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.1575425,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.1913838,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.2240932,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.257377,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.2922971,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.3273304,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.359221,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.425638,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.4619904,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.4982154,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.5093114,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.5276868,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.5786278,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.5981045,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.6278,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.6633816,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.6980312,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.7288916,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.756999,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.8292668,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.8807328,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.8950815,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.9102838,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.9259968,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.9638958,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526760.9954708,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.0301354,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.0647452,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.0936308,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.1240814,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.1915808,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.224217,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.243393,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.2930367,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.3234189,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.3408866,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.3593373,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.4073496,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.4242706,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.4603317,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.4928644,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.5265932,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.593388,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.625467,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.6585193,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.6907778,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.7234616,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.7565496,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.7736902,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.7902713,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.826357,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.8573864,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.890982,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.9241257,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526761.9920495,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.0233495,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.0586858,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.0766578,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.109653,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.1594284,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.1739492,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.1921425,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.2257977,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.2572224,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.2918108,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.3241575,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.3910706,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.4242048,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.4628208,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.4894075,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.5259054,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.5594025,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.592089,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.6033092,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.6243267,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.6596687,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.6918838,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.723817,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.7910676,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.826684,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.8579822,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.892999,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.9248204,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.9579084,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526762.9909031,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.0242627,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.0432842,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.0598712,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.0931695,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.1239357,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.1569333,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.2235875,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.2575395,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.275458,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.3091865,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.3398476,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.3730247,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.4248862,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.4586208,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.4742088,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.491485,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.5243092,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.5918796,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.625606,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.658066,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.6930947,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.7089305,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.7425017,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.7743523,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.802042,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.8569698,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.8751624,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.8915553,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.9279375,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526763.991617,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.0243876,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.0633395,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.089061,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.124925,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.1595428,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.177515,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.2090569,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.258308,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.2931619,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.3090456,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.3247604,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.356199,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.426313,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.4589367,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.492861,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.5086977,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.5418448,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.5724726,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.6032693,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.6401482,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.6929195,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.7223294,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.7399044,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.7894313,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.8249075,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.857707,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.8901024,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.9084234,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.9460077,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526764.9740975,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.0104518,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.041568,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.0751796,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.1276526,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.1619568,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.1931126,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.223998,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.2568233,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.2918751,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.3250315,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.3412135,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.3720338,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.4072556,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.439866,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.4725986,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.5066621,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.5564852,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.591154,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.6245468,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.6595879,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.6923287,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.7263157,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.7433164,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.7763064,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.8101225,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.841901,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.8761964,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.9080737,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.9583137,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526765.9892914,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.0230367,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.0565312,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.0914736,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.1251786,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.1578074,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.173549,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.2081013,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.2384403,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.2729797,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.3053477,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.3384316,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.3925157,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.4261763,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.461881,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.495321,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.5283382,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.5459146,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.5749838,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.6106637,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.6429198,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.676924,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.7089968,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.741713,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.7783759,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.8273299,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.860167,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.8957376,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.9202542,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.96232,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526766.985255,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.009454,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.0434153,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.0785174,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.107788,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.143795,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.1784327,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.2100391,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.260719,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.2780914,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.326577,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.3453228,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.389603,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.4057379,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.4403944,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.4740965,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.5050838,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.540801,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.5716312,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.605705,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.6572318,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.6915684,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.7227976,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.7398722,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.7738152,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.8070111,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.838521,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.87614,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.9066072,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.9400485,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526767.9726725,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.0114806,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.0452554,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.0918446,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.1239495,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.1570222,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.190246,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.2237992,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.2415345,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.273036,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.305712,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.3395336,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.3746684,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.4065566,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.44077,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.4731767,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.5077271,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.556409,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.5738792,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.6264842,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.6437438,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.6767669,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.7090628,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.7428777,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.777938,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.8119428,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.8404398,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.8709464,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.9055827,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.9398873,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526768.9707203,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.0040143,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.038339,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.0739877,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.1062257,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.1378233,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.1729252,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.2050846,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.2402225,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.2744439,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.3061268,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.3541005,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.37152,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.422451,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.4379566,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.4955342,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.5093908,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.5432916,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.5747328,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.6065784,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.6387339,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.6711695,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.7135992,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.7315888,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.774914,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.8066297,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.8390994,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.8817222,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.9125457,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.9426734,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526769.9739723,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.0057716,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.038337,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.0719965,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.1058264,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.1225188,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.171634,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.2048945,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.2386465,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.272213,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.3050501,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.3382967,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.3778987,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.4092128,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.439921,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.473658,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.5064042,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.5395112,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.5714116,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.6031637,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.6372764,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.6699119,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.7035937,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.7365644,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.776975,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.8045757,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.8376753,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.8773155,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.9060087,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.9396439,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526770.971684,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.0052288,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.0387144,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.0712273,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.10524,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.1363673,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.171652,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.206354,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.240864,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.2752807,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.3066998,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.3409123,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.3793583,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.4044385,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.4200118,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.4941206,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.5218291,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.5387573,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.5690045,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.6017234,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.6375337,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.6713953,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.7052286,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.737191,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.769539,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.7887888,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.8349843,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.8530116,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.916348,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.9321442,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.979383,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526771.994749,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.0422468,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.0739915,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.1066182,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.1386445,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.1706653,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.2033885,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.2366219,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.2695005,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.305113,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.3402107,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.3716102,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.4023752,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.4370468,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.469366,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.5005863,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.532326,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.5734727,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.6069326,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.6415763,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.655989,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.7046745,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.7376153,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.7734916,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.8070536,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.842405,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.871022,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.9052763,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.93777,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526772.9700835,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.0032902,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.0378833,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.0720668,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.0890994,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.1219378,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.2001846,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.2161293,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.2318676,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.2711535,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.3022132,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.336597,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.3561838,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.4013946,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.4193065,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.4673998,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.4863598,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.5363238,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.554424,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.631969,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.6477506,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.6636786,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.6951191,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.7400637,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.774819,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.8079658,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.8390965,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.8547342,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.8916385,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.9206269,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526773.9569106,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.035444,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.0551856,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.0735478,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.1061697,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.1399403,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.1712854,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.205233,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.240441,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.2743542,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.3049695,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.3196979,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.35806,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.4420002,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.4757235,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.4902387,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.5042624,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.5400465,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.5718203,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.6074982,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.6386318,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.6759853,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.703697,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.723777,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.7851212,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.817075,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.8674805,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.900952,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.9218624,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.9359353,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526774.967666,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.0010545,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.0348485,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.0681362,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.102287,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.136883,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.1989324,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.2145245,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.2468505,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.299729,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.3355622,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.354354,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.367005,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.4025307,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.433493,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.4560099,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.5003636,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.5181313,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.5835376,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.616889,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.6487215,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.683986,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.734111,
+        "diff": 2.24,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.7523,
+        "diff": 2.24,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.7689629,
+        "diff": 2.24,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.7998157,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.835685,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.8684242,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.9030836,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.9356906,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526775.9850533,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.016731,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.0526905,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.0881472,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.1374156,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.1693738,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.1869788,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.2041008,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.2376215,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.2712102,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.3014925,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.3342474,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.3994262,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.4181738,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.450522,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.4830725,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.5165594,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.56911,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.6007693,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.6184566,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.635634,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.6672866,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.7014756,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.7340817,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.7684844,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.8193252,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.853517,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.8862607,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.9189928,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.9502692,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526776.9993181,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.035302,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.053269,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.0703652,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.1050928,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.134994,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.1988869,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.214491,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.2464218,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.277663,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.3206973,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.3522072,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.3844316,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.4335966,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.4526277,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.4709375,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.5000799,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.5337129,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.5977168,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.6131945,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.6607835,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.6758409,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.7240071,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.7513716,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.7827158,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.8324761,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.8505712,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.8682055,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.9036849,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.9359767,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526777.9867723,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.0160706,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.0498288,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.0863826,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.1165774,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.1480477,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.1848006,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.218422,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.2659316,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.2846231,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.3011076,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.3357646,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.3988593,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.4144201,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.4461634,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.4781666,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.5089128,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.5520353,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.584232,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.6149743,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.6500044,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.6834767,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.7182996,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.7319162,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.7519245,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.8155081,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.852892,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.8857358,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.9209778,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.9539082,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526778.9863057,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.0200682,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.0532932,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.0891163,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.1178672,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.1342523,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.1540723,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.2154658,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.2510233,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.2853389,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.3185797,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.3490667,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.3899121,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.4171295,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.4503696,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.4840565,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.515429,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.5499575,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.5818439,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.6187599,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.6520507,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.682192,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.7167847,
+        "diff": 1.41,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.7522721,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.7855105,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.8172398,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.8502445,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.8711946,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.9192755,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.9499772,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526779.9861367,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.0165308,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.0490665,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.0834944,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.1152425,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.1501231,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.1834579,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.2167757,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.2496903,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.268449,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.3193023,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.3323824,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.3962944,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.4118145,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.459247,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.4747694,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.5218058,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.5522397,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.584967,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.620737,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.651235,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.6917791,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.718369,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.734136,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.788069,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.8187933,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.8559895,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.8835094,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.9158916,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.9518552,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526780.9837146,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.0179515,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.0502896,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.08243,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.1180043,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.149327,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.1821394,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.2146864,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.2482958,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.2812562,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.3144627,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.351246,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.3834987,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.4145277,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.4471576,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.4702616,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.5030687,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.550625,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.5682123,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.6146438,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.6503983,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.6816232,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.7150886,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.7482975,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.7825575,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.8155684,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.8501163,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.8834734,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.9163306,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.9501371,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526781.9833012,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.0199673,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.0344121,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.0836563,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.1163492,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.1502936,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.1853423,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.217526,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.2513845,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.2849634,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.3165045,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.3500416,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.3828385,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.415617,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.433379,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.4652543,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.5116532,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.5433059,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.5748756,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.616337,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.6491494,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.6824534,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.7158237,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.7485938,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.7812989,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.8164372,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.8363955,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.8658574,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.918706,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.9531827,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526782.9862483,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.0164495,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.0539331,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.0862713,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.1196363,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.1533382,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.1877394,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.2182174,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.234637,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.2695508,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.2996838,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.3524141,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.3852744,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.4195743,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.4540014,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.4831393,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.515618,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.551613,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.5903163,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.6155393,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.6358554,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.6857913,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.7000902,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.736345,
+        "diff": 3.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.7815669,
+        "diff": 5.2,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.8207407,
+        "diff": 7.14,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.849903,
+        "diff": 9.27,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.882518,
+        "diff": 9.54,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.9158556,
+        "diff": 5.48,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.9425857,
+        "diff": 4.58,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.9821784,
+        "diff": 4.58,
+        "status": "same"
+      },
+      {
+        "time": 1788526783.998885,
+        "diff": 3.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526784.03288,
+        "diff": 7.35,
+        "status": "same"
+      },
+      {
+        "time": 1788526784.0652785,
+        "diff": 9.27,
+        "status": "same"
+      },
+      {
+        "time": 1788526784.0985694,
+        "diff": 13.19,
+        "status": "same"
+      },
+      {
+        "time": 1788526784.134066,
+        "diff": 16.06,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.1661706,
+        "diff": 19.13,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.2157536,
+        "diff": 22.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.2493896,
+        "diff": 24.08,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.2830517,
+        "diff": 25.04,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.3138814,
+        "diff": 26.04,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.3482938,
+        "diff": 29.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.3669462,
+        "diff": 29.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.4013505,
+        "diff": 28.04,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.4352887,
+        "diff": 28.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.4662826,
+        "diff": 29.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.4975557,
+        "diff": 28.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.5345492,
+        "diff": 29.03,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.566864,
+        "diff": 29.03,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.6191828,
+        "diff": 29.03,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.654399,
+        "diff": 29.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.6847503,
+        "diff": 30.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.7152984,
+        "diff": 29.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.7520747,
+        "diff": 28.04,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.7850432,
+        "diff": 27.04,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.7986374,
+        "diff": 25.04,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.8321753,
+        "diff": 24.04,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.8704135,
+        "diff": 24.08,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.901844,
+        "diff": 22.11,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.9376206,
+        "diff": 20.12,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526784.9676273,
+        "diff": 18.11,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526785.0032492,
+        "diff": 16.16,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526785.0515242,
+        "diff": 14.14,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.083057,
+        "diff": 11.22,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.1159744,
+        "diff": 11.18,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.1953773,
+        "diff": 8.25,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.261919,
+        "diff": 6.78,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.2864337,
+        "diff": 6.78,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.3171268,
+        "diff": 5.66,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.3332493,
+        "diff": 5.66,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.363892,
+        "diff": 4.36,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.381461,
+        "diff": 4.36,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.4325871,
+        "diff": 6.4,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.4459848,
+        "diff": 6.4,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.495925,
+        "diff": 5.66,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.5145855,
+        "diff": 5.66,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.5629914,
+        "diff": 5.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.5810876,
+        "diff": 5.0,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.5976477,
+        "diff": 6.4,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.662567,
+        "diff": 6.48,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.6825175,
+        "diff": 6.48,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.7292702,
+        "diff": 7.62,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.748105,
+        "diff": 7.62,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.7970233,
+        "diff": 11.4,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.815434,
+        "diff": 11.4,
+        "status": "same"
+      },
+      {
+        "time": 1788526785.847903,
+        "diff": 15.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526785.8647416,
+        "diff": 15.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526785.9163039,
+        "diff": 19.24,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526785.9808056,
+        "diff": 23.19,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526785.998548,
+        "diff": 23.19,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.0456233,
+        "diff": 26.17,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.0619059,
+        "diff": 26.17,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.108297,
+        "diff": 29.15,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.123818,
+        "diff": 29.15,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.1582055,
+        "diff": 31.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.1739254,
+        "diff": 31.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.2180722,
+        "diff": 34.06,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.2778518,
+        "diff": 37.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.293476,
+        "diff": 37.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.3412569,
+        "diff": 38.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.357813,
+        "diff": 38.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.388987,
+        "diff": 41.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.4047987,
+        "diff": 41.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.4559884,
+        "diff": 43.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.5167098,
+        "diff": 43.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.5340347,
+        "diff": 43.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.5805783,
+        "diff": 45.06,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.5979269,
+        "diff": 45.06,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.6333103,
+        "diff": 46.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.6481445,
+        "diff": 46.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.7004797,
+        "diff": 45.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.7157452,
+        "diff": 45.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.756045,
+        "diff": 46.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.7849426,
+        "diff": 46.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.8320632,
+        "diff": 47.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.8672967,
+        "diff": 45.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.8853152,
+        "diff": 45.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.9127593,
+        "diff": 46.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.931247,
+        "diff": 47.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.948437,
+        "diff": 45.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526786.995246,
+        "diff": 45.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.0139248,
+        "diff": 46.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.0486329,
+        "diff": 46.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.082994,
+        "diff": 46.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.1168194,
+        "diff": 47.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.1465535,
+        "diff": 48.0,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.180958,
+        "diff": 48.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.2284014,
+        "diff": 48.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.2470956,
+        "diff": 49.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.2950115,
+        "diff": 49.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.3133314,
+        "diff": 49.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.365083,
+        "diff": 49.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.3820338,
+        "diff": 50.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.428646,
+        "diff": 50.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.4486876,
+        "diff": 50.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.486556,
+        "diff": 50.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.518196,
+        "diff": 49.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.5475109,
+        "diff": 49.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.5833724,
+        "diff": 49.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.6174085,
+        "diff": 49.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.6497724,
+        "diff": 50.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.681195,
+        "diff": 50.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.7126129,
+        "diff": 50.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.7528234,
+        "diff": 50.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.782261,
+        "diff": 50.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.818864,
+        "diff": 50.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.8505664,
+        "diff": 51.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.8827693,
+        "diff": 51.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.9138515,
+        "diff": 51.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.9517775,
+        "diff": 51.05,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526787.9668398,
+        "diff": 51.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526788.0180292,
+        "diff": 51.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526788.048624,
+        "diff": 51.01,
+        "status": "not_same"
+      },
+      {
+        "time": 1788526788.0872824,
+        "diff": 51.01,
+        "status": "not_same"
+      }
+    ]
+  },
+  {
+    "id": 1788525154,
+    "fabric_name": "rtf",
+    "date": "2026-09-04 20:32:04",
+    "duration": 30,
+    "total_readings": 899,
+    "same": 51,
+    "not_same": 848,
+    "pct_good": 5.7,
+    "pct_bad": 94.3,
+    "avg_diff": 35.94,
+    "readings": [
+      {
+        "time": 1788525124.5981565,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.605523,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.612595,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.6204073,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.6719198,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.7065346,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.733768,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.7641783,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.7959611,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.8282955,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.859186,
+        "diff": 1.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.9009418,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.9326854,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.9616525,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525124.9952846,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.02196,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.0773122,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.1024184,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.1423924,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.166866,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.2010422,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.2276661,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.2609947,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.2960517,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.3260598,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.3666072,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.3987958,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.4277084,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.4616566,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.5014565,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.5342708,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.5648232,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.5957217,
+        "diff": 0.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.6273203,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.6580396,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.6901946,
+        "diff": 2.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.7227752,
+        "diff": 3.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.7633097,
+        "diff": 4.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.7859662,
+        "diff": 6.16,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.8283277,
+        "diff": 8.12,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.8509057,
+        "diff": 11.05,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.884457,
+        "diff": 14.07,
+        "status": "same"
+      },
+      {
+        "time": 1788525125.9365277,
+        "diff": 18.03,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525125.96344,
+        "diff": 19.03,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525125.9960768,
+        "diff": 10.05,
+        "status": "same"
+      },
+      {
+        "time": 1788525126.028224,
+        "diff": 3.0,
+        "status": "same"
+      },
+      {
+        "time": 1788525126.061434,
+        "diff": 5.2,
+        "status": "same"
+      },
+      {
+        "time": 1788525126.092909,
+        "diff": 5.83,
+        "status": "same"
+      },
+      {
+        "time": 1788525126.1232834,
+        "diff": 7.68,
+        "status": "same"
+      },
+      {
+        "time": 1788525126.1566663,
+        "diff": 9.49,
+        "status": "same"
+      },
+      {
+        "time": 1788525126.193814,
+        "diff": 10.44,
+        "status": "same"
+      },
+      {
+        "time": 1788525126.229869,
+        "diff": 11.22,
+        "status": "same"
+      },
+      {
+        "time": 1788525126.2509449,
+        "diff": 13.15,
+        "status": "same"
+      },
+      {
+        "time": 1788525126.2845545,
+        "diff": 15.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.3158906,
+        "diff": 17.12,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.3650484,
+        "diff": 20.25,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.395179,
+        "diff": 21.1,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.4281955,
+        "diff": 24.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.4614863,
+        "diff": 27.07,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.494313,
+        "diff": 27.07,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.5244963,
+        "diff": 29.07,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.5566802,
+        "diff": 31.08,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.5916207,
+        "diff": 30.08,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.6266487,
+        "diff": 31.08,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.6608791,
+        "diff": 29.09,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.6900957,
+        "diff": 30.08,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.7167919,
+        "diff": 32.02,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.7644022,
+        "diff": 34.23,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.8117151,
+        "diff": 33.26,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.8756926,
+        "diff": 35.13,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.9424076,
+        "diff": 35.23,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525126.9516282,
+        "diff": 35.23,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.004582,
+        "diff": 37.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.014128,
+        "diff": 37.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.0523345,
+        "diff": 39.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.0639715,
+        "diff": 39.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.116567,
+        "diff": 37.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.1245685,
+        "diff": 37.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.1807013,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.188903,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.2442951,
+        "diff": 38.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.2529268,
+        "diff": 38.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.2977161,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.3554473,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.3618133,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.422245,
+        "diff": 37.35,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.4289603,
+        "diff": 37.35,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.489256,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.4950962,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.534069,
+        "diff": 35.71,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.5442371,
+        "diff": 35.71,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.595894,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.6686044,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.6791081,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.73002,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.7376294,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.7805724,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.7990162,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.8379045,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.9077802,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.9203122,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.9723701,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525127.9849396,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.0207744,
+        "diff": 33.54,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.0371141,
+        "diff": 33.54,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.0785909,
+        "diff": 33.54,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.0861378,
+        "diff": 33.54,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.1447961,
+        "diff": 33.38,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.213711,
+        "diff": 33.38,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.2248325,
+        "diff": 33.38,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.2559617,
+        "diff": 32.39,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.2641175,
+        "diff": 32.39,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.3262243,
+        "diff": 32.56,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.3379414,
+        "diff": 32.56,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.4087799,
+        "diff": 35.37,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.4216845,
+        "diff": 35.37,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.458797,
+        "diff": 35.37,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.4668372,
+        "diff": 35.37,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.5162866,
+        "diff": 35.37,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.5600293,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.571121,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.6233087,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.6312528,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.690512,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.6977382,
+        "diff": 34.53,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.7532878,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.7617161,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.8062952,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.8141453,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.864467,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.9275725,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.93417,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.990351,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525128.9989376,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.0434723,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.0531685,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.103999,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.1864133,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.1998718,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.2340643,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.246636,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.2801988,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.2928753,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.3436105,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.4058192,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.4124427,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.4719102,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.4775505,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.527926,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.5369911,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.58706,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.5942805,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.6498036,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.6555564,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.7109559,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.775156,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.7883234,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.8306766,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.8395748,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.908649,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.9255242,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.9608333,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525129.975004,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.0181606,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.0363603,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.067111,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.1278348,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.1339927,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.191152,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.1980429,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.2549498,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.2612128,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.3119948,
+        "diff": 38.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.32163,
+        "diff": 38.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.3708785,
+        "diff": 38.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.4323804,
+        "diff": 38.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.437891,
+        "diff": 38.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.5031993,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.5113556,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.5540464,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.5613084,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.6244488,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.6789968,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.6889412,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.7348926,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.7413146,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.8021843,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.8161583,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.8607585,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.866562,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.9373627,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525130.999176,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.009431,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.0240254,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.0316048,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.1012218,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.1101935,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.1651247,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.1735764,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.2349885,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.2448797,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.2670913,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.3474677,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.3615258,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.3933535,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.398804,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.4713628,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.4814622,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.5052378,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.5133784,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.5680692,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.629648,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.6368709,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.695158,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.702548,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.7567344,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.7632935,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.8072064,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.8147833,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.869775,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.9355793,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525131.9427779,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.00418,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.0113456,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.0509925,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.0624652,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.113316,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.1864767,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.1939921,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.2465386,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.2556326,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.294113,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.305043,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.374208,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.388544,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.4144642,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.426531,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.4806504,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.5332649,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.5422597,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.5920722,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.6022642,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.6552224,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.6622534,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.7241175,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.7334418,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.778508,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.7906094,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.839411,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.8951006,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.9047718,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.960616,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525132.9708807,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.0086515,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.0192983,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.071305,
+        "diff": 37.48,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.1374989,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.1453526,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.203826,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.2132816,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.2647347,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.2716787,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.3120215,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.327777,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.3762288,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.4428427,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.4496975,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.5085423,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.5146568,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.5662653,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.5756793,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.6281862,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.6358936,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.6950815,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.702669,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.7487035,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.801344,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.8112535,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.8626134,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.880936,
+        "diff": 36.5,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.9256203,
+        "diff": 36.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.9350336,
+        "diff": 36.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525133.99918,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.0055392,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.0458999,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.059764,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.100769,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.1756015,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.1916864,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.2255654,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.2332296,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.276202,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.2915492,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.3541546,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.4011073,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.4104724,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.4640338,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.471301,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.5120027,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.525568,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.576206,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.6388474,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.6462374,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.705956,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.7129881,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.7617252,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.7706609,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.820634,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.8289635,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.8810287,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.9439423,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525134.9534495,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.0113542,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.0243728,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.0748389,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.0924814,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.1233704,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.13193,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.1862855,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.194866,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.2570384,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.2639515,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.3079627,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.3780017,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.3916,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.435172,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.4445357,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.5086534,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.521508,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.534795,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.5413125,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.6176257,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.6677046,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.6745286,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.743623,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.7549388,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.781985,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.794343,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.845759,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.912333,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.9211853,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.979409,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525135.9879754,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.0225182,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.0302901,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.0811276,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.142394,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.1493328,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.2044554,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.2118611,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.259789,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.2695289,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.3266084,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.3356647,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.3868904,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.3946307,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.449206,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.4581296,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.5147128,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.576177,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.5901372,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.6246111,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.6310437,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.6991816,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.708758,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.767797,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.77794,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.8207479,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.833759,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.8645499,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.9358196,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525136.946574,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.0074272,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.01677,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.0387576,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.0461369,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.1091545,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.1706696,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.1785262,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.2353468,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.2418714,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.2812808,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.2895043,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.3447735,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.4164705,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.4243436,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.473058,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.4830027,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.5249617,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.534027,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.5866163,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.594439,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.6517982,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.6628501,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.713418,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.7593904,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.7676225,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.8209267,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.8283408,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.8851578,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.8925464,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.9636378,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525137.9703982,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.0112438,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.025101,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.0859149,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.1279228,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.1403198,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.2051575,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.2199645,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.2598982,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.2687392,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.3106415,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.3247204,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.37789,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.4400775,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.4506211,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.5088325,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.518079,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.545859,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.5526423,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.6234884,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.6774707,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.683592,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.7349176,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.740655,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.787873,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.7949595,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.873797,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.8870656,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.9180512,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.975831,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525138.9820852,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.0208204,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.0284073,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.0926802,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.0976703,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.1509495,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.1574144,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.2181733,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.22443,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.2652671,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.3303816,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.337048,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.3937657,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.4031353,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.462094,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.4706569,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.5069041,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.517912,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.575129,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.6340954,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.6396914,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.7127037,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.7262876,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.761414,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.7722523,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.8069508,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.812132,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.8850312,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.951263,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525139.965219,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.0115027,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.021661,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.063087,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.0752728,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.1149957,
+        "diff": 35.52,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.1752017,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.1816041,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.2385087,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.2451665,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.2872114,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.3015974,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.3585427,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.370668,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.4254313,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.43605,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.48215,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.4932852,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.5307121,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.5958302,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.60268,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.6566398,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.6657996,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.7188127,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.7258384,
+        "diff": 35.51,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.7733192,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.7842102,
+        "diff": 35.36,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.8400583,
+        "diff": 36.35,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.9021697,
+        "diff": 36.35,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.9099972,
+        "diff": 36.35,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.9615488,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525140.9675372,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.0070155,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.013347,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.0722857,
+        "diff": 37.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.1497529,
+        "diff": 37.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.164605,
+        "diff": 37.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.2132041,
+        "diff": 37.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.2264104,
+        "diff": 37.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.2626567,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.272695,
+        "diff": 37.34,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.323653,
+        "diff": 37.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.3469949,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.353902,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.3757358,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.4223158,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.45553,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.490236,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.5026665,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.5187306,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.5546627,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.5875938,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.619244,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.6480997,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.7123437,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.7520778,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.7815247,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.81351,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.844078,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.890608,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.9285545,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.9351852,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.9509056,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525141.983318,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.0172536,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.0791607,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.111199,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.1394012,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.168756,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.2012508,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.2346141,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.2909346,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.3183808,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.3264394,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.3500485,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.3802445,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.419068,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.4766772,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.5168,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.546389,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.5856411,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.6037068,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.6490343,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.676414,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.720321,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.7487564,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.7559333,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.7891917,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.822997,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.8899713,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.920654,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.9504614,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525142.972953,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.011287,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.038434,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.0650482,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.1096961,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.1528673,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.1880999,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.20224,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.2200515,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.2770154,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.3088105,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.339318,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.3709435,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.401113,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.434897,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.46724,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.501212,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.5322802,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.5814614,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.6126676,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.625661,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.6850412,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.7098722,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.7403018,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.7693536,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.8011312,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.8330421,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.8681207,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.9071224,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.9386468,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525143.988675,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.0170267,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.0332901,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.0533607,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.1090996,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.1499813,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.1748345,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.2105508,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.2402358,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.278927,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.306171,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.3384256,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.3816817,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.4191537,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.4528933,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.4629195,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.5163107,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.5498693,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.5782459,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.6108649,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.6392815,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.6749535,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.7082758,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.7350903,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.7698085,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.8071463,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.8459008,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.884316,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.9117036,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.9397295,
+        "diff": 42.43,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525144.9707186,
+        "diff": 42.43,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.0009162,
+        "diff": 42.43,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.036733,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.070176,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.0988102,
+        "diff": 42.43,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.1386292,
+        "diff": 42.43,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.1617765,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.1932852,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.228027,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.276535,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.3134193,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.3396223,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.3713155,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.4035854,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.4356618,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.4670029,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.5052562,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.5395834,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.5696192,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.599806,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.6327703,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.6770113,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.7080145,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.7385216,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.7723854,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.8039212,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.8358696,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.86654,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.8998027,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.9311025,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.9702501,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525145.9953854,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.0277822,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.0617502,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.1100683,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.1476305,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.1785278,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.2140324,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.2411935,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.2680233,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.3106852,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.337514,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.3653746,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.3959851,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.4308858,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.462789,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.492592,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.5410397,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.5709105,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.6033583,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.6339612,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.6659548,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.701033,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.732125,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.7658088,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.7991762,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.8302646,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.8615384,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.8909965,
+        "diff": 41.44,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.930558,
+        "diff": 40.45,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525146.9719021,
+        "diff": 40.45,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.0096407,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.0423803,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.079626,
+        "diff": 40.45,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.1003528,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.1430118,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.1750958,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.2049184,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.2323272,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.2707958,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.3009803,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.3283522,
+        "diff": 40.45,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.3714275,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.4117289,
+        "diff": 40.45,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.4410102,
+        "diff": 40.45,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.4754934,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.5046182,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.5354788,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.5705724,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.6022189,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.6378355,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.672734,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.707239,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.7252638,
+        "diff": 40.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.7582603,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.8113968,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.840509,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.8794942,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.9034126,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.9366994,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.9629405,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525147.9969296,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.0345151,
+        "diff": 41.3,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.0615017,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.0923965,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.125877,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.1558511,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.1865845,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.2371147,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.2670133,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.2986252,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.3332417,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.3656998,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.400522,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.431538,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.4598296,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.4904659,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.533439,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.5614452,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.5952466,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.6193445,
+        "diff": 39.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.673523,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.7053046,
+        "diff": 39.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.7389102,
+        "diff": 39.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.765448,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.7987542,
+        "diff": 38.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.8304791,
+        "diff": 38.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.8609374,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.8992245,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.929135,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.9574292,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525148.987153,
+        "diff": 39.22,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.0196552,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.0747278,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.106526,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.1398168,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.167654,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.1986701,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.2323756,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.2701564,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.3010502,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.328663,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.3650048,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.3991992,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.4208417,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.4517863,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.5039635,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.5303543,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.564925,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.5961475,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.62977,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.6637917,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.6933198,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.7264452,
+        "diff": 38.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.7579088,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.787751,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.8188663,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.8503132,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.8835666,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.939613,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.9650905,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525149.9971757,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.035093,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.0701644,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.1033893,
+        "diff": 38.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.125279,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.1643507,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.1946769,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.230008,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.2574246,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.2877212,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.324945,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.3701408,
+        "diff": 38.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.4049072,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.433448,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.4700754,
+        "diff": 38.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.4972968,
+        "diff": 38.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.5288658,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.564252,
+        "diff": 38.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.594304,
+        "diff": 38.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.6189632,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.661187,
+        "diff": 38.21,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.685963,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.7267616,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.774053,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.8011124,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.8308148,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.868958,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.9013116,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.9263408,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.9575162,
+        "diff": 39.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525150.9866145,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.0188475,
+        "diff": 39.33,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.0527377,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.0880492,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.1237614,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.1474895,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.1957726,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.2261739,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.2613287,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.2940269,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.3255138,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.3609908,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.391889,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.426477,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.4613976,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.4914968,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.5205996,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.5475903,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.5821126,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.6353426,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.6646268,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.6967716,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.7417314,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.7624106,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.7909713,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.8281147,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.8538535,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.889677,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.9221823,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.9534864,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525151.9845276,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.0110266,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.1003075,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.114035,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.131304,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.1601634,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.1890666,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.2324383,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.2522492,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.2899284,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.321839,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.3474145,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.3886878,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.4180648,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.4899638,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.4964666,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.5258377,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.557228,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.5877752,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.618236,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.6516144,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.6823604,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.715647,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.7487724,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.780725,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.8137386,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.8903081,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.924428,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.9351401,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.9550076,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525152.9890726,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.019961,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.0595105,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.0874755,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.1197655,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.1481988,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.1788762,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.21604,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.2805073,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.3326864,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.3657417,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.382013,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.4000494,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.4209938,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.461088,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.4851162,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.5238516,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.5577948,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.588566,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.615753,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.6873515,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.709029,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.7624393,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.79635,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.8078132,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.8298678,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.8586698,
+        "diff": 40.2,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.8892236,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.9159286,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.9488904,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525153.998854,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.0100613,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.075144,
+        "diff": 40.31,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.108577,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.1586766,
+        "diff": 39.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.1944501,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.2010143,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.2199566,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.252286,
+        "diff": 39.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.2845926,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.3148425,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.3450444,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.3841665,
+        "diff": 39.47,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.411711,
+        "diff": 39.32,
+        "status": "not_same"
+      },
+      {
+        "time": 1788525154.473759,
+        "diff": 39.32,
+        "status": "not_same"
+      }
+    ]
+  },
+  {
     "id": 1785143899,
     "fabric_name": "hhhhh",
     "date": "2026-07-27 17:17:58",

@@ -5,6 +5,12 @@
         <div class="report-title">TEST REPORT</div>
         <div class="report-fabric">{{ report.fabric_name }}</div>
         <div class="report-date">{{ report.date }}</div>
+        {% if report.light_source or report.operator %}
+        <div class="report-meta">
+            {% if report.light_source %}<span>Light source: <strong>{{ report.light_source }}</strong></span>{% endif %}
+            {% if report.operator %}<span>Operator: <strong>{{ report.operator }}</strong></span>{% endif %}
+        </div>
+        {% endif %}
     </div>
 
     <div class="report-stats">
@@ -25,9 +31,15 @@
         </div>
         <div class="rstat neu">
             <div class="rstat-pct">{{ report.avg_diff }}</div>
-            <div class="rstat-lbl">AVG DELTA E</div>
-            <div class="rstat-count">color variance</div>
+            <div class="rstat-lbl">AVG ΔE</div>
+            <div class="rstat-count">std dev {{ report.std_diff if report.std_diff is defined else '—' }}</div>
         </div>
+    </div>
+
+    <div class="report-sub-meta">
+        ΔE method: <strong>{{ report.delta_e_method if report.delta_e_method is defined else 'CIE76 (Lab space)' }}</strong>
+        &nbsp;·&nbsp; Threshold: <strong>ΔE ≤ {{ report.delta_e_threshold if report.delta_e_threshold is defined else 15 }}</strong>
+        {% if report.min_diff is defined %}&nbsp;·&nbsp; Range: <strong>{{ report.min_diff }} – {{ report.max_diff }}</strong>{% endif %}
     </div>
 
     <div class="verdict {{ 'pass' if report.pct_good >= 80 else 'fail' }}">
@@ -48,6 +60,7 @@
     <div class="report-actions">
         <button class="btn-back" onclick="history.back()">← BACK</button>
         <button class="btn-again" onclick="window.location='/check_color'">CHECK AGAIN</button>
+        <button class="btn-export" onclick="window.location='/report/{{ report.id }}/export.csv'">⬇ EXPORT CSV</button>
         <button class="btn-delete" onclick="deleteReport({{ report.id }})">DELETE</button>
     </div>
 </div>
