@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabric Color Detection</title>
+    <title>Fabric Color Variation Detection</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -16,11 +16,15 @@
                 <div class="sb-logo-text">FABRIC QC<br>VISION LAB</div>
             </div>
             <nav class="sb-nav">
-                <a href="/check_color" class="sb-item {% if request.path == '/check_color' or request.path == '/' %}active{% endif %}">
-                    <span class="sb-dot {% if request.path == '/check_color' or request.path == '/' %}active{% endif %}"></span> CHECK COLOR
+                {% set p = request.path %}
+                <a href="/check_color" class="sb-item {% if p in ['/check_color', '/'] %}active{% endif %}">
+                    <span class="sb-dot {% if p in ['/check_color', '/'] %}active{% endif %}"></span> CHECK COLOR
                 </a>
-                <a href="/check_gsm" class="sb-item {% if request.path == '/check_gsm' %}active{% endif %}">
-                    <span class="sb-dot {% if request.path == '/check_gsm' %}active{% endif %}"></span> CHECK GSM
+                <a href="/setup" class="sb-item {% if p == '/setup' %}active{% endif %}">
+                    <span class="sb-dot {% if p == '/setup' %}active{% endif %}"></span> SETUP &amp; CALIBRATION
+                </a>
+                <a href="/check_gsm" class="sb-item {% if p == '/check_gsm' %}active{% endif %}">
+                    <span class="sb-dot {% if p == '/check_gsm' %}active{% endif %}"></span> CHECK GSM
                 </a>
             </nav>
             <div class="sb-section">TEST HISTORY</div>
@@ -31,12 +35,14 @@
         <main class="main-content">
             <header class="topbar">
                 <h1 class="topbar-title">FABRIC COLOR VARIATION DETECTION</h1>
+                {% block topbar_extra %}{% endblock %}
             </header>
             <div class="content-area">
                 {% block content %}{% endblock %}
             </div>
         </main>
     </div>
+    <div class="toast" id="toast"></div>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     {% block scripts %}{% endblock %}
 </body>

@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block topbar_extra %}<div class="mode-pill none" id="modePill" title="Which camera is in use">
+    <span class="mp-dot"></span><span id="modeText">Looking for camera…</span>
+</div>{% endblock %}
+{% block content %}
+<div class="setup-page" data-live="setup">
+
+    <div class="top-row">
+        <div class="sec-lbl">SETUP &amp; CALIBRATION</div>
+        <div class="ctrl-row">
+            <div class="ig md inline"><div class="cam-select-wrap">
+    <select class="field cam-select" id="cameraSelect" onchange="selectCamera(this.value)">
+        <option value="auto">Auto (prefer USB camera)</option>
+    </select>
+    <button class="icon-btn" type="button" onclick="rescanCameras()" title="Look for cameras again">⟳</button>
+</div></div>
+            <div class="light-group" id="readiness" title="">
+    <div class="light-badge checking" id="lightBadge">
+        <span class="lbd"></span>
+        <span id="lightTxt">CHECKING…</span>
+    </div>
+    <div class="light-sep"></div>
+    <div class="dots-wrap">
+        <div class="ld dim" id="ld_camera" title="Camera"></div>
+        <div class="ld dim" id="ld_dark" title="Not too dark"></div>
+        <div class="ld dim" id="ld_bright" title="Not overexposed"></div>
+        <div class="ld dim" id="ld_stable" title="Stable"></div>
+        <div class="ld dim" id="ld_even" title="Even light"></div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <ol class="steps">
+        <li>Put a <strong>uniformly dyed reference fabric</strong> under the camera.</li>
+        <li>Move the camera and lights until all five checks are green.</li>
+        <li><strong>Measure baseline</strong> — the system records its own noise for 10 s.</li>
+        <li>Enter the distances you used and <strong>save the setup</strong>. Reports will quote it.</li>
+    </ol>
+
+    <div class="setup-grid">
+        <div class="cam-frame setup-cam">
+            <img id="liveFeed" alt="Live camera feed with inspection grid" />
+            <div class="demo-banner" id="demoBanner" style="display:none;">
+                DEMO MODE — laptop camera. You can try the steps, but only a setup saved with the USB C270 counts.
+            </div>
+            <div class="state-banner" id="stateBanner" style="display:none;"></div>
+        </div>
+
+        <div class="panel checks-panel">
+            <div class="panel-title">Live checks</div>
+            <div class="check-list" id="checkList"></div>
+            <div class="cam-info" id="camInfo">—</div>
+            <button class="btn-soft" onclick="relockCamera()" title="Let the camera re-adapt to the current light, then lock it">
+                Re-lock exposure &amp; white balance
+            </button>
+
+            <div class="panel-title mt">Baseline</div>
+            <div class="baseline-row">
+                <label for="baselineDur">Seconds</label>
+                <input type="number" class="field sm-field" id="baselineDur" value="10" min="3" max="60" />
+                <button class="btn3d refresh" id="btnBaseline" onclick="startBaseline()">MEASURE BASELINE</button>
+            </div>
+            <div class="progress" id="baselineProgress" style="display:none;"><div class="progress-fill" id="baselineFill"></div></div>
+            <div class="baseline-result" id="baselineResult">
+                <span class="muted">No baseline measured yet.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-title">Save this setup</div>
+        <div class="form-grid">
+            <div class="ig"><label for="spName">SETUP NAME</label>
+                <input class="field" id="spName" placeholder="e.g. Booth A — 30 cm / 45°" /></div>
+            <div class="ig"><label for="spCamDist">CAMERA → FABRIC (CM)</label>
+                <input class="field" id="spCamDist" type="number" step="0.5" /></div>
+            <div class="ig"><label for="spLightDist">LIGHT → FABRIC (CM)</label>
+                <input class="field" id="spLightDist" type="number" step="0.5" /></div>
+            <div class="ig"><label for="spAngle">LIGHT ANGLE (°)</label>
+                <input class="field" id="spAngle" type="number" step="1" placeholder="e.g. 45" /></div>
+            <div class="ig wide"><label for="spLight">LIGHT SOURCE</label>
+                <input class="field" id="spLight" value="{{ config.default_light_source }}" /></div>
+            <div class="ig"><label for="spFabric">REFERENCE FABRIC</label>
+                <input class="field" id="spFabric" placeholder="e.g. White cotton 180 GSM" /></div>
+            <div class="ig wide"><label for="spNotes">NOTES</label>
+                <input class="field" id="spNotes" placeholder="Room light off, booth closed…" /></div>
+        </div>
+        <div class="form-actions">
+            <button class="btn3d start" id="btnSaveSetup" onclick="saveSetup()">SAVE SETUP</button>
+            <span class="muted" id="saveHint">Measure the baseline first.</span>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-head">
+            <div class="panel-title">Saved setups (trials)</div>
+            <a class="btn-soft" href="/setups/export.csv">⬇ Export all as CSV</a>
+        </div>
+        <div class="table-wrap">
+            <table class="setup-table">
+                <thead><tr>
+                    <th>Name</th><th>Camera</th><th>Cam cm</th><th>Light cm</th><th>Angle</th>
+                    <th>Noise ΔE00</th><th>Uniformity ΔE00</th><th>Suggested limit</th><th>Result</th><th></th>
+                </tr></thead>
+                <tbody id="setupRows"><tr><td colspan="10" class="muted">No setups saved yet.</td></tr></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/setup.js') }}"></script>
+{% endblock %}

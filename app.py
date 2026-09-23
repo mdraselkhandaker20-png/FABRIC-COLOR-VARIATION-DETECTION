@@ -1,411 +1,412 @@
-from flask import Flask, render_template, Response, jsonify, request, send_file
-import cv2
-import numpy as np
-import threading
-import time
-import json
-import os
+"""
+Fabric Color Variation Detection — Flask web layer (v2).
+
+    python app.py            -> http://127.0.0.1:5000  (browser, for debugging)
+    python desktop_app.py    -> native desktop window   (recommended)
+
+Camera handling, colour maths and the test logic live in engine.py and
+colorimetry.py. This file only stores reports/setup profiles and serves pages.
+"""
 import csv
 import io
+import json
+import os
+import sys
+import threading
+import time
 from datetime import datetime
 
-app = Flask(__name__)
+import cv2
+import numpy as np
+from flask import Flask, Response, jsonify, render_template, request, send_file
 
-lock = threading.Lock()
-is_running = False
-color_status = "idle"
-reference_color = None
-color_history = []
-current_brightness = 0
-light_level = 0
-CAM_INDEX = 0  # only one camera is used: the connected USB inspection camera
+from engine import CONFIG, Engine
 
-current_test = {
-    "fabric_name": "",
-    "light_source": "",
-    "operator": "",
-    "start_time": None,
-    "readings": [],
-    "duration": 30,
-    "camera_index": CAM_INDEX,
-    "last_report": None,
-}
 
-REPORTS_FILE = "reports.json"
-BRIGHTNESS_THRESHOLDS = [60, 90, 110, 110, 120]
-DELTA_E_THRESHOLD = 15  # CIE76 Delta E — colors <= this are treated as "same"
+# ── paths: work both as a script and as a PyInstaller .exe ──
+def _resource_dir():
+    return getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+
+
+def _data_dir():
+    if getattr(sys, "frozen", False):
+        return os.path.dirname(sys.executable)
+    return os.path.dirname(os.path.abspath(__file__))
+
+
+RES_DIR, DATA_DIR = _resource_dir(), _data_dir()
+REPORTS_FILE = os.path.join(DATA_DIR, "reports.json")
+SETUPS_FILE = os.path.join(DATA_DIR, "setups.json")
+SETTINGS_FILE = os.path.join(DATA_DIR, "settings.json")
+
+app = Flask(__name__,
+            template_folder=os.path.join(RES_DIR, "templates"),
+            static_folder=os.path.join(RES_DIR, "static"))
+
+_file_lock = threading.Lock()
+
+
+# ── JSON storage ──
+def _load(path, default):
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            return default
+    return default
+
+
+def _save(path, data):
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, path)
 
 
 def load_reports():
-    if os.path.exists(REPORTS_FILE):
-        with open(REPORTS_FILE, "r") as f:
-            return json.load(f)
-    return []
+    return _load(REPORTS_FILE, [])
 
 
 def save_report(report):
-    reports = load_reports()
-    reports.insert(0, report)
-    with open(REPORTS_FILE, "w") as f:
-        json.dump(reports, f, indent=2)
+    with _file_lock:
+        reports = load_reports()
+        reports.insert(0, report)
+        _save(REPORTS_FILE, reports)
 
 
-def configure_camera(cap):
-    """Lock exposure / white balance / focus so every reading is captured under
-    identical camera settings. This matters far more than the camera's price tag —
-    without it, the auto-exposure / auto-WB algorithm will silently drift the
-    measured color between frames, which shows up as false 'not_same' readings.
-    Not every USB camera / driver exposes every property, so each call is wrapped
-    so unsupported properties are simply skipped instead of crashing.
-    """
-    settings_applied = {}
-    try:
-        # 0.25 = manual mode on most UVC/DirectShow backends (V4L2 uses 1 = manual)
-        ok = cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 0.25)
-        settings_applied["auto_exposure_off"] = bool(ok)
-    except Exception:
-        pass
-    try:
-        ok = cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
-        settings_applied["autofocus_off"] = bool(ok)
-    except Exception:
-        pass
-    try:
-        ok = cap.set(cv2.CAP_PROP_AUTO_WB, 0)
-        settings_applied["auto_wb_off"] = bool(ok)
-    except Exception:
-        pass
-    return settings_applied
+def load_setups():
+    return _load(SETUPS_FILE, [])
 
 
-def get_brightness(frame):
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    return float(gray.mean())
+def load_settings():
+    return _load(SETTINGS_FILE, {})
 
 
-def get_light_level(brightness):
-    level = 0
-    for t in BRIGHTNESS_THRESHOLDS:
-        if brightness >= t:
-            level += 1
-        else:
-            break
-    return level
+def save_settings(s):
+    with _file_lock:
+        _save(SETTINGS_FILE, s)
 
 
-def get_dominant_color(frame, region):
-    x, y, w, h = region
-    roi = frame[y:y+h, x:x+w]
-    roi_resized = cv2.resize(roi, (50, 50))
-    pixels = roi_resized.reshape(-1, 3).astype(np.float32)
-    criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 10, 1.0)
-    _, _, centers = cv2.kmeans(pixels, 1, None, criteria, 10, cv2.KMEANS_RANDOM_CENTERS)
-    return centers[0].astype(int)
-
-
-def bgr_to_lab(c):
-    return cv2.cvtColor(np.uint8([[c]]), cv2.COLOR_BGR2Lab)[0][0].astype(float)
-
-
-def color_difference(c1, c2):
-    """CIE76 Delta E between two BGR colors, via Lab space."""
-    l1 = bgr_to_lab(c1)
-    l2 = bgr_to_lab(c2)
-    return float(np.sqrt(np.sum((l1 - l2) ** 2)))
-
-
-def _finalize_report():
-    readings = current_test["readings"]
-    if not readings:
+def active_setup():
+    sid = load_settings().get("active_setup_id")
+    if sid is None:
         return None
-    total = len(readings)
-    same = sum(1 for r in readings if r["status"] == "same")
-    not_same = total - same
-    pct_good = round(same / total * 100, 1)
-    pct_bad = round(not_same / total * 100, 1)
-    diffs = [r["diff"] for r in readings]
-    avg_diff = round(sum(diffs) / total, 2)
-    std_diff = round(float(np.std(diffs)), 2) if total > 1 else 0.0
-    max_diff = round(max(diffs), 2)
-    min_diff = round(min(diffs), 2)
-    report = {
-        "id": int(time.time()),
-        "fabric_name": current_test["fabric_name"],
-        "light_source": current_test.get("light_source", ""),
-        "operator": current_test.get("operator", ""),
-        "date": current_test["start_time"],
-        "duration": current_test["duration"],
-        "total_readings": total,
-        "same": same,
-        "not_same": not_same,
-        "pct_good": pct_good,
-        "pct_bad": pct_bad,
-        "avg_diff": avg_diff,
-        "std_diff": std_diff,
-        "max_diff": max_diff,
-        "min_diff": min_diff,
-        "delta_e_threshold": DELTA_E_THRESHOLD,
-        "delta_e_method": "CIE76 (Lab space)",
-        "readings": readings,
-    }
-    save_report(report)
-    current_test["last_report"] = report
-    return report
+    return next((s for s in load_setups() if s["id"] == sid), None)
 
 
-def preview_gen(cam_idx=CAM_INDEX):
-    global current_brightness, light_level
-    cap = cv2.VideoCapture(cam_idx)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-    configure_camera(cap)
-    while True:
-        if is_running:
-            time.sleep(0.1)
-            continue
-        ret, frame = cap.read()
-        if not ret:
-            time.sleep(0.5)
-            continue
-        b = get_brightness(frame)
-        with lock:
-            current_brightness = b
-            light_level = get_light_level(b)
-        _, buffer = cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, 80])
-        yield (b'--frame\r\nContent-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n')
-    cap.release()
+def report_summary(r):
+    return {k: v for k, v in r.items() if k != "readings"}
 
 
-def generate_frames():
-    global is_running, color_status, reference_color, color_history
-    global current_test, current_brightness, light_level
-    cam_idx = current_test.get("camera_index", CAM_INDEX)
-    cap = cv2.VideoCapture(cam_idx)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-    configure_camera(cap)
-    frame_count = 0
-    ref_set = False
-    test_start = None
-
-    while is_running:
-        ret, frame = cap.read()
-        if not ret:
-            break
-        h, w = frame.shape[:2]
-        region = (w // 4, h // 3, w // 2, h // 3)
-        rx, ry, rw, rh = region
-
-        b = get_brightness(frame)
-        with lock:
-            current_brightness = b
-            ll = get_light_level(b)
-            light_level = ll
-
-        # light কমে গেলে stop
-        if ll < 5 and ref_set:
-            with lock:
-                is_running = False
-                color_status = "idle"
-                _finalize_report()
-            break
-
-        current_color = get_dominant_color(frame, region)
-
-        with lock:
-            if not ref_set and frame_count > 10:
-                reference_color = current_color.copy()
-                ref_set = True
-                test_start = time.time()
-                current_test["start_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                current_test["readings"] = []
-
-            if ref_set and reference_color is not None:
-                diff = color_difference(reference_color, current_color)
-                status = "same" if diff <= DELTA_E_THRESHOLD else "not_same"
-                color_status = status
-                reading = {"time": time.time(), "diff": round(diff, 2), "status": status}
-                color_history.append(reading)
-                if len(color_history) > 60:
-                    color_history.pop(0)
-                current_test["readings"].append(reading)
-
-                elapsed = time.time() - test_start
-                if elapsed >= current_test["duration"]:
-                    is_running = False
-                    _finalize_report()
-
-        cv2.rectangle(frame, (rx, ry), (rx + rw, ry + rh), (0, 255, 100), 2)
-        fabric = current_test.get("fabric_name", "")
-        if fabric:
-            cv2.putText(frame, f"Fabric: {fabric}", (rx, ry - 10),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.55, (255, 220, 50), 2)
-        frame_count += 1
-        _, buffer = cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, 80])
-        yield (b'--frame\r\nContent-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n')
-
-    cap.release()
+# ── engine ──
+engine = Engine(on_report=save_report, get_active_setup=active_setup)
+engine.start()
 
 
-@app.route('/')
-def index():
-    return render_template('check_color.html')
+def _blank_jpeg(text):
+    img = np.full((480, 640, 3), 18, np.uint8)
+    for i, line in enumerate(text.split("\n")):
+        cv2.putText(img, line, (40, 220 + i * 34), cv2.FONT_HERSHEY_SIMPLEX, 0.75,
+                    (150, 200, 160), 2, cv2.LINE_AA)
+    return cv2.imencode(".jpg", img)[1].tobytes()
 
 
-@app.route('/check_color')
+NO_CAMERA_JPEG = _blank_jpeg("No camera connected.\nPlug in the USB camera -\nit is picked up automatically.")
+
+
+# ── pages ──
+@app.route("/")
+@app.route("/check_color")
 def check_color():
-    return render_template('check_color.html')
+    return render_template("check_color.html", config=CONFIG)
 
 
-@app.route('/check_gsm')
+@app.route("/setup")
+def setup_page():
+    return render_template("setup.html", config=CONFIG)
+
+
+@app.route("/check_gsm")
 def check_gsm():
-    return render_template('check_gsm.html')
+    return render_template("check_gsm.html")
 
 
-@app.route('/report/<int:report_id>')
+@app.route("/report/<int:report_id>")
 def report_page(report_id):
-    reports = load_reports()
-    report = next((r for r in reports if r["id"] == report_id), None)
+    report = next((r for r in load_reports() if r["id"] == report_id), None)
     if not report:
         return "Report not found", 404
-    return render_template('report.html', report=report)
+    return render_template("report.html", report=report, config=CONFIG)
 
 
-@app.route('/report/<int:report_id>/export.csv')
-def export_report_csv(report_id):
-    reports = load_reports()
-    report = next((r for r in reports if r["id"] == report_id), None)
-    if not report:
-        return "Report not found", 404
-    buf = io.StringIO()
-    writer = csv.writer(buf)
-    writer.writerow(["Fabric Color Variation Detection - Test Report"])
-    writer.writerow(["Fabric name", report.get("fabric_name")])
-    writer.writerow(["Light source", report.get("light_source", "")])
-    writer.writerow(["Operator", report.get("operator", "")])
-    writer.writerow(["Date", report.get("date")])
-    writer.writerow(["Duration (s)", report.get("duration")])
-    writer.writerow(["Delta E method", report.get("delta_e_method", "CIE76 (Lab space)")])
-    writer.writerow(["Delta E threshold", report.get("delta_e_threshold", DELTA_E_THRESHOLD)])
-    writer.writerow(["Total readings", report.get("total_readings")])
-    writer.writerow(["Same (%)", report.get("pct_good")])
-    writer.writerow(["Not same (%)", report.get("pct_bad")])
-    writer.writerow(["Avg Delta E", report.get("avg_diff")])
-    writer.writerow(["Std dev Delta E", report.get("std_diff", "")])
-    writer.writerow(["Min Delta E", report.get("min_diff", "")])
-    writer.writerow(["Max Delta E", report.get("max_diff", "")])
-    writer.writerow([])
-    writer.writerow(["#", "Timestamp", "Delta E", "Status"])
-    for i, r in enumerate(report.get("readings", []), 1):
-        writer.writerow([i, r.get("time"), r.get("diff"), r.get("status")])
-    mem = io.BytesIO(buf.getvalue().encode("utf-8"))
-    fname = f"report_{report.get('fabric_name','fabric')}_{report_id}.csv".replace(" ", "_")
-    return send_file(mem, mimetype="text/csv", as_attachment=True, download_name=fname)
+# ── live data ──
+@app.route("/stream")
+def stream():
+    view = request.args.get("view", "check")
+
+    def gen():
+        last = -1
+        while True:
+            jpg, fid = engine.stream_frame(view)
+            if jpg is None:
+                jpg = NO_CAMERA_JPEG
+                time.sleep(0.5)
+            elif fid == last:
+                time.sleep(0.02)
+                continue
+            last = fid
+            yield b"--frame\r\nContent-Type: image/jpeg\r\n\r\n" + jpg + b"\r\n"
+            time.sleep(0.04)
+
+    return Response(gen(), mimetype="multipart/x-mixed-replace; boundary=frame")
 
 
-@app.route('/preview_feed')
-def preview_feed():
-    cam_idx = int(request.args.get('cam', CAM_INDEX))
-    return Response(preview_gen(cam_idx), mimetype='multipart/x-mixed-replace; boundary=frame')
-
-
-@app.route('/video_feed')
-def video_feed():
-    return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
-
-
-@app.route('/light_status')
-def light_status():
-    with lock:
-        return jsonify({"brightness": round(current_brightness, 1), "level": light_level})
-
-
-@app.route('/start', methods=['POST'])
-def start():
-    global is_running, reference_color, color_history, color_status, current_test
-    data = request.get_json() or {}
-    with lock:
-        ll = light_level
-    if ll < 5:
-        return jsonify({"status": "light_low", "message": "Light not OK"})
-    fabric_name = data.get("fabric_name", "Unknown").strip() or "Unknown"
-    light_source = data.get("light_source", "").strip()
-    operator = data.get("operator", "").strip()
-    duration = int(data.get("duration", 30))
-    with lock:
-        if not is_running:
-            is_running = True
-            reference_color = None
-            color_history = []
-            color_status = "idle"
-            current_test["fabric_name"] = fabric_name
-            current_test["light_source"] = light_source
-            current_test["operator"] = operator
-            current_test["duration"] = duration
-            current_test["camera_index"] = CAM_INDEX
-            current_test["start_time"] = None
-            current_test["readings"] = []
-            current_test["last_report"] = None
-    return jsonify({"status": "started"})
-
-
-@app.route('/stop', methods=['POST'])
-def stop():
-    global is_running, color_status
-    report = None
-    with lock:
-        if is_running:
-            is_running = False
-            color_status = "idle"
-            report = _finalize_report()
-    return jsonify({"status": "stopped", "report": report})
-
-
-@app.route('/status')
+@app.route("/status")
 def status():
-    with lock:
-        history_copy = list(color_history[-30:])
-        current_status = color_status
-        is_on = is_running
-        fabric = current_test["fabric_name"]
-        readings = list(current_test["readings"])
-        last_report = current_test.get("last_report")
-        b = current_brightness
-        ll = light_level
-    total = len(readings)
-    same = sum(1 for r in readings if r["status"] == "same")
-    pct_good = round(same / total * 100, 1) if total else 0
-    pct_bad = round(100 - pct_good, 1) if total else 0
-    return jsonify({
-        "running": is_on,
-        "color_status": current_status,
-        "fabric_name": fabric,
-        "history": history_copy,
-        "stats": {
-            "total": total,
-            "same": same,
-            "not_same": total - same,
-            "pct_good": pct_good,
-            "pct_bad": pct_bad,
-        },
-        "last_report": last_report,
-        "light": {"brightness": round(b, 1), "level": ll},
-    })
+    s = engine.snapshot()
+    setup = active_setup()
+    s["active_setup"] = None if not setup else {
+        "id": setup["id"], "name": setup["name"],
+        "camera_distance_cm": setup.get("camera_distance_cm"),
+        "light_distance_cm": setup.get("light_distance_cm"),
+        "light_angle_deg": setup.get("light_angle_deg"),
+        "light_source": setup.get("light_source"),
+        "setup_ok": setup.get("setup_ok"),
+        "noise_mean_de00": (setup.get("baseline") or {}).get("noise_mean_de00"),
+        "suggested_threshold_de00": (setup.get("baseline") or {}).get("suggested_threshold_de00"),
+    }
+    return jsonify(s)
 
 
-@app.route('/reports')
+@app.route("/cameras/rescan", methods=["POST"])
+def cameras_rescan():
+    engine.request_rescan()
+    return jsonify({"ok": True})
+
+
+@app.route("/cameras/select", methods=["POST"])
+def cameras_select():
+    name = (request.get_json(silent=True) or {}).get("name", "auto")
+    ok, msg = engine.select_camera(name)
+    return jsonify({"ok": ok, "message": msg})
+
+
+@app.route("/camera/relock", methods=["POST"])
+def camera_relock():
+    ok, msg = engine.request_relock()
+    return jsonify({"ok": ok, "message": msg})
+
+
+# ── colour test ──
+@app.route("/start", methods=["POST"])
+def start():
+    d = request.get_json(silent=True) or {}
+    fabric = (d.get("fabric_name") or "").strip()
+    if not fabric:
+        return jsonify({"ok": False, "message": "Enter a fabric name first."})
+    try:
+        duration = max(5, min(600, int(d.get("duration", 30))))
+        threshold = float(d.get("threshold") or CONFIG["default_threshold_de00"])
+    except (TypeError, ValueError):
+        return jsonify({"ok": False, "message": "Duration and threshold must be numbers."})
+    ok, msg = engine.start_test(fabric, (d.get("light_source") or "").strip(), duration, threshold,
+                                (d.get("operator") or "").strip())
+    return jsonify({"ok": ok, "message": msg})
+
+
+@app.route("/stop", methods=["POST"])
+def stop():
+    report = engine.stop_test()
+    return jsonify({"ok": True, "report": report_summary(report) if report else None})
+
+
+# ── setup / calibration ──
+@app.route("/baseline/start", methods=["POST"])
+def baseline_start():
+    d = request.get_json(silent=True) or {}
+    try:
+        dur = max(3, min(60, float(d.get("duration", 10))))
+    except (TypeError, ValueError):
+        dur = 10
+    ok, msg = engine.start_baseline(dur)
+    return jsonify({"ok": ok, "message": msg})
+
+
+def _num(v):
+    try:
+        return None if v in (None, "") else float(v)
+    except (TypeError, ValueError):
+        return None
+
+
+@app.route("/setups", methods=["GET"])
+def setups_list():
+    return jsonify({"setups": load_setups(), "active_setup_id": load_settings().get("active_setup_id")})
+
+
+@app.route("/setups", methods=["POST"])
+def setups_save():
+    d = request.get_json(silent=True) or {}
+    baseline = engine.snapshot().get("baseline_result")
+    if not baseline:
+        return jsonify({"ok": False, "message": "Measure the baseline first."})
+    name = (d.get("name") or "").strip() or f"Setup {datetime.now():%Y-%m-%d %H:%M}"
+    setup = {
+        "id": int(time.time() * 1000),
+        "name": name,
+        "created": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "camera_distance_cm": _num(d.get("camera_distance_cm")),
+        "light_distance_cm": _num(d.get("light_distance_cm")),
+        "light_angle_deg": _num(d.get("light_angle_deg")),
+        "light_source": (d.get("light_source") or "").strip(),
+        "reference_fabric": (d.get("reference_fabric") or "").strip(),
+        "notes": (d.get("notes") or "").strip(),
+        "setup_ok": baseline["setup_ok"],
+        "baseline": baseline,
+    }
+    with _file_lock:
+        setups = load_setups()
+        setups.insert(0, setup)
+        _save(SETUPS_FILE, setups)
+    if d.get("activate", True):
+        s = load_settings()
+        s["active_setup_id"] = setup["id"]
+        save_settings(s)
+    return jsonify({"ok": True, "setup": setup})
+
+
+@app.route("/setups/<int:sid>/activate", methods=["POST"])
+def setups_activate(sid):
+    if not any(s["id"] == sid for s in load_setups()):
+        return jsonify({"ok": False, "message": "Setup not found."}), 404
+    s = load_settings()
+    s["active_setup_id"] = sid
+    save_settings(s)
+    return jsonify({"ok": True})
+
+
+@app.route("/setups/<int:sid>", methods=["DELETE"])
+def setups_delete(sid):
+    with _file_lock:
+        setups = [s for s in load_setups() if s["id"] != sid]
+        _save(SETUPS_FILE, setups)
+    s = load_settings()
+    if s.get("active_setup_id") == sid:
+        s["active_setup_id"] = None
+        save_settings(s)
+    return jsonify({"ok": True})
+
+
+SETUP_CSV_COLS = [
+    ("Name", lambda s, b: s["name"]), ("Created", lambda s, b: s["created"]),
+    ("Camera", lambda s, b: b.get("camera_name")), ("Mode", lambda s, b: b.get("mode")),
+    ("Camera-fabric distance (cm)", lambda s, b: s.get("camera_distance_cm")),
+    ("Light-fabric distance (cm)", lambda s, b: s.get("light_distance_cm")),
+    ("Light angle (deg)", lambda s, b: s.get("light_angle_deg")),
+    ("Light source", lambda s, b: s.get("light_source")),
+    ("Reference fabric", lambda s, b: s.get("reference_fabric")),
+    ("Exposure locked", lambda s, b: (b.get("camera_settings") or {}).get("locked")),
+    ("Mean L*", lambda s, b: b.get("mean_L")),
+    ("Black px (%)", lambda s, b: b.get("dark_clip_pct")),
+    ("Clipped px (%)", lambda s, b: b.get("bright_clip_pct")),
+    ("Noise mean dE00", lambda s, b: b.get("noise_mean_de00")),
+    ("Noise SD dE00", lambda s, b: b.get("noise_std_de00")),
+    ("Noise P95 dE00", lambda s, b: b.get("noise_p95_de00")),
+    ("Noise max dE00", lambda s, b: b.get("noise_max_de00")),
+    ("Uniformity max dE00", lambda s, b: b.get("uniformity_max_de00")),
+    ("Uniformity mean dE00", lambda s, b: b.get("uniformity_mean_de00")),
+    ("Suggested threshold dE00", lambda s, b: b.get("suggested_threshold_de00")),
+    ("Setup OK", lambda s, b: s.get("setup_ok")),
+    ("Frames", lambda s, b: b.get("frames")),
+    ("Notes", lambda s, b: s.get("notes")),
+]
+
+
+@app.route("/setups/export.csv")
+def setups_export():
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow([c[0] for c in SETUP_CSV_COLS])
+    for s in load_setups():
+        b = s.get("baseline") or {}
+        w.writerow([c[1](s, b) for c in SETUP_CSV_COLS])
+    mem = io.BytesIO(buf.getvalue().encode("utf-8-sig"))
+    return send_file(mem, mimetype="text/csv", as_attachment=True, download_name="setup_trials.csv")
+
+
+# ── reports ──
+@app.route("/reports")
 def get_reports():
-    return jsonify(load_reports())
+    return jsonify([report_summary(r) for r in load_reports()])
 
 
-@app.route('/reports/<int:report_id>', methods=['DELETE'])
+@app.route("/reports/<int:report_id>", methods=["DELETE"])
 def delete_report(report_id):
-    reports = load_reports()
-    reports = [r for r in reports if r["id"] != report_id]
-    with open(REPORTS_FILE, "w") as f:
-        json.dump(reports, f, indent=2)
+    with _file_lock:
+        reports = [r for r in load_reports() if r["id"] != report_id]
+        _save(REPORTS_FILE, reports)
     return jsonify({"status": "deleted"})
 
 
-if __name__ == '__main__':
-    app.run(debug=True, threaded=True)
+@app.route("/report/<int:report_id>/export.csv")
+def export_report_csv(report_id):
+    r = next((x for x in load_reports() if x["id"] == report_id), None)
+    if not r:
+        return "Report not found", 404
+    setup = r.get("setup") or {}
+    base = setup.get("baseline") or {}
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(["Fabric Color Variation Detection - Test Report"])
+    rows = [
+        ("Report version", r.get("version", 1)),
+        ("Mode", (r.get("mode") or "legacy").upper()),
+        ("Fabric name", r.get("fabric_name")),
+        ("Light source", r.get("light_source", "")),
+        ("Operator", r.get("operator", "")),
+        ("Date", r.get("date")),
+        ("Camera", r.get("camera_name", "")),
+        ("Exposure/WB locked", (r.get("camera_settings") or {}).get("locked", "")),
+        ("Setup profile", setup.get("name", "")),
+        ("Camera-fabric distance (cm)", setup.get("camera_distance_cm", "")),
+        ("Light-fabric distance (cm)", setup.get("light_distance_cm", "")),
+        ("Light angle (deg)", setup.get("light_angle_deg", "")),
+        ("Setup noise mean dE00", base.get("noise_mean_de00", "")),
+        ("Setup uniformity max dE00", base.get("uniformity_max_de00", "")),
+        ("Planned duration (s)", r.get("duration")),
+        ("Actual duration (s)", r.get("actual_duration", "")),
+        ("Stop reason", r.get("stop_reason", "")),
+        ("Delta E method", r.get("delta_e_method", "CIE76 (legacy scaled Lab)")),
+        ("Delta E threshold", r.get("delta_e_threshold", 15)),
+        ("Reference L*a*b*", " ".join(str(v) for v in r.get("reference_lab", []))),
+        ("Total readings", r.get("total_readings")),
+        ("Same (%)", r.get("pct_good")),
+        ("Not same (%)", r.get("pct_bad")),
+        ("Mean dE (primary)", r.get("avg_diff")),
+        ("SD dE (primary)", r.get("std_diff", "")),
+        ("P95 dE (primary)", r.get("p95_diff", "")),
+        ("Min dE (primary)", r.get("min_diff", "")),
+        ("Max dE (primary)", r.get("max_diff", "")),
+        ("Mean dE76", r.get("de76_avg", "")),
+        ("Mean dE CMC(2:1)", r.get("decmc_avg", "")),
+    ]
+    for row in rows:
+        w.writerow(row)
+    w.writerow([])
+    if r.get("version", 1) >= 2:
+        w.writerow(["#", "t (s)", "L*", "a*", "b*", "dE00", "dE76", "dE CMC(2:1)", "Status"])
+        for i, x in enumerate(r.get("readings", []), 1):
+            w.writerow([i, x["t"], x["L"], x["a"], x["b"], x["de00"], x["de76"], x["decmc"], x["status"]])
+    else:
+        w.writerow(["#", "Timestamp", "Delta E (legacy)", "Status"])
+        for i, x in enumerate(r.get("readings", []), 1):
+            w.writerow([i, x.get("time"), x.get("diff"), x.get("status")])
+    mem = io.BytesIO(buf.getvalue().encode("utf-8-sig"))
+    fname = f"report_{r.get('fabric_name', 'fabric')}_{report_id}.csv".replace(" ", "_")
+    return send_file(mem, mimetype="text/csv", as_attachment=True, download_name=fname)
+
+
+if __name__ == "__main__":
+    # use_reloader=False: the reloader would start a second engine and fight over the camera
+    app.run(debug=True, threaded=True, use_reloader=False)

@@ -1,16 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
+{% set v2 = (report.version or 1) >= 2 %}
+{% set setup = report.setup or {} %}
+{% set base = setup.baseline or {} %}
+{% set thr = report.delta_e_threshold if report.delta_e_threshold is not none else 15 %}
 <div class="report-page">
+    {% if not v2 %}
+    <div class="notice legacy">
+        Legacy report (v1). Its ΔE values were computed on OpenCV's 8-bit Lab scale, which inflates
+        colour differences — do not compare them with v2 reports or use them in the paper.
+    </div>
+    {% elif report.mode != 'measurement' %}
+    <div class="notice demo">
+        DEMO report — recorded with “{{ report.camera_name }}”, not the measurement camera.
+        Shows that the system works; not a measurement.
+    </div>
+    {% endif %}
+
     <div class="report-header">
         <div class="report-title">TEST REPORT</div>
-        <div class="report-fabric">{{ report.fabric_name }}</div>
+        <div class="report-fabric">
+            {% if v2 %}<span class="ref-chip" style="background:{{ report.reference_hex }}"></span>{% endif %}
+            {{ report.fabric_name }}
+        </div>
         <div class="report-date">{{ report.date }}</div>
-        {% if report.light_source or report.operator %}
         <div class="report-meta">
-            {% if report.light_source %}<span>Light source: <strong>{{ report.light_source }}</strong></span>{% endif %}
+            {% if v2 %}<span>Mode: <strong class="mode-{{ report.mode }}">{{ report.mode|upper }}</strong></span>
+            <span>Camera: <strong>{{ report.camera_name }}</strong></span>{% endif %}
+            {% if report.light_source %}<span>Light: <strong>{{ report.light_source }}</strong></span>{% endif %}
             {% if report.operator %}<span>Operator: <strong>{{ report.operator }}</strong></span>{% endif %}
         </div>
-        {% endif %}
     </div>
 
     <div class="report-stats">
@@ -27,35 +46,60 @@
         <div class="rstat neu">
             <div class="rstat-pct">{{ report.total_readings }}</div>
             <div class="rstat-lbl">TOTAL READINGS</div>
-            <div class="rstat-count">{{ report.duration }}s test</div>
+            <div class="rstat-count">{{ report.actual_duration or report.duration }} s{% if report.fps %}, {{ report.fps }} fps{% endif %}</div>
         </div>
         <div class="rstat neu">
             <div class="rstat-pct">{{ report.avg_diff }}</div>
-            <div class="rstat-lbl">AVG ΔE</div>
-            <div class="rstat-count">std dev {{ report.std_diff if report.std_diff is defined else '—' }}</div>
+            <div class="rstat-lbl">MEAN {{ 'ΔE00' if v2 else 'ΔE (legacy)' }}</div>
+            <div class="rstat-count">SD {{ report.std_diff if report.std_diff is not none else '—' }}{% if v2 %}, P95 {{ report.p95_diff }}{% endif %}</div>
         </div>
     </div>
 
     <div class="report-sub-meta">
-        ΔE method: <strong>{{ report.delta_e_method if report.delta_e_method is defined else 'CIE76 (Lab space)' }}</strong>
-        &nbsp;·&nbsp; Threshold: <strong>ΔE ≤ {{ report.delta_e_threshold if report.delta_e_threshold is defined else 15 }}</strong>
-        {% if report.min_diff is defined %}&nbsp;·&nbsp; Range: <strong>{{ report.min_diff }} – {{ report.max_diff }}</strong>{% endif %}
+        Method: <strong>{{ report.delta_e_method or 'CIE76 (legacy)' }}</strong>
+        &nbsp;|&nbsp; Limit: <strong>ΔE ≤ {{ thr }}</strong>
+        {% if report.min_diff is not none %}&nbsp;|&nbsp; Range: <strong>{{ report.min_diff }} – {{ report.max_diff }}</strong>{% endif %}
+        {% if v2 %}&nbsp;|&nbsp; Mean ΔE76: <strong>{{ report.de76_avg }}</strong>
+        &nbsp;|&nbsp; Mean ΔE CMC(2:1): <strong>{{ report.decmc_avg }}</strong>
+        &nbsp;|&nbsp; Stop: <strong>{{ report.stop_reason|replace('_', ' ') }}</strong>{% endif %}
     </div>
 
-    <div class="verdict {{ 'pass' if report.pct_good >= 80 else 'fail' }}">
-        {% if report.pct_good >= 90 %}
-        ★ EXCELLENT — Color consistency outstanding
-        {% elif report.pct_good >= 80 %}
-        ✓ FABRIC PASSED — Color consistency acceptable
-        {% else %}
-        ✗ FABRIC FAILED — Color inconsistency detected
-        {% endif %}
+    <div class="verdict {{ 'pass' if report.pct_good >= config.pass_pct else 'fail' }}">
+        {% if report.pct_good >= config.excellent_pct %}★ EXCELLENT — Color consistency outstanding
+        {% elif report.pct_good >= config.pass_pct %}✓ FABRIC PASSED — Color consistency acceptable
+        {% else %}✗ FABRIC FAILED — Color inconsistency detected{% endif %}
     </div>
 
     <div class="report-chart-wrap">
         <div class="graph-label">COLOR DIFFERENCE OVER TIME</div>
-        <canvas id="reportGraph" height="140"></canvas>
+        <canvas id="reportGraph" height="160"></canvas>
     </div>
+
+    {% if v2 %}
+    <div class="report-cols">
+        <div class="panel">
+            <div class="panel-title">Measurement conditions</div>
+            <table class="kv">
+                <tr><td>Setup profile</td><td>{{ setup.name or 'none saved' }}{% if setup and not setup.setup_ok %} <span class="tag warn">checks not all passed</span>{% endif %}</td></tr>
+                <tr><td>Camera → fabric</td><td>{{ setup.camera_distance_cm ~ ' cm' if setup.camera_distance_cm is not none else '—' }}</td></tr>
+                <tr><td>Light → fabric</td><td>{{ setup.light_distance_cm ~ ' cm' if setup.light_distance_cm is not none else '—' }}</td></tr>
+                <tr><td>Light angle</td><td>{{ setup.light_angle_deg ~ '°' if setup.light_angle_deg is not none else '—' }}</td></tr>
+                <tr><td>System noise (baseline)</td><td>{{ 'ΔE00 ' ~ base.noise_mean_de00 ~ ' ± ' ~ base.noise_std_de00 if base else '—' }}</td></tr>
+                <tr><td>Light uniformity (baseline)</td><td>{{ 'max ΔE00 ' ~ base.uniformity_max_de00 if base else '—' }}</td></tr>
+                <tr><td>Exposure / WB locked</td><td>{{ 'yes' if (report.camera_settings or {}).locked else 'no' }}</td></tr>
+            </table>
+        </div>
+        <div class="panel">
+            <div class="panel-title">Reference colour</div>
+            <table class="kv">
+                <tr><td>L* a* b*</td><td>{{ report.reference_lab|join(' / ') }}</td></tr>
+                <tr><td>Reference built from</td><td>median of {{ report.reference_frames }} frames</td></tr>
+                <tr><td>Max ΔE00</td><td>{{ report.max_diff }}</td></tr>
+                <tr><td>Max ΔE76 / CMC(2:1)</td><td>{{ report.de76_max }} / {{ report.decmc_max }}</td></tr>
+            </table>
+        </div>
+    </div>
+    {% endif %}
 
     <div class="report-actions">
         <button class="btn-back" onclick="history.back()">← BACK</button>
@@ -66,30 +110,38 @@
 </div>
 
 <script>
-const readings = {{ report.readings | tojson }};
-const canvas = document.getElementById('reportGraph');
-const ctx = canvas.getContext('2d');
-canvas.width = canvas.parentElement.offsetWidth - 32;
-const w = canvas.width, h = 140;
-const maxDiff = 40, THRESHOLD = 15;
-ctx.fillStyle = '#f8f7f5'; ctx.fillRect(0,0,w,h);
-const ty = h - (THRESHOLD/maxDiff)*h;
-ctx.strokeStyle='rgba(239,68,68,0.4)'; ctx.setLineDash([6,4]); ctx.lineWidth=1.5;
-ctx.beginPath(); ctx.moveTo(0,ty); ctx.lineTo(w,ty); ctx.stroke();
-ctx.setLineDash([]); ctx.fillStyle='rgba(239,68,68,0.5)'; ctx.font='11px monospace';
-ctx.fillText('THRESHOLD', w-85, ty-5);
-if(readings.length > 1){
-    const step = w/(readings.length-1);
-    ctx.beginPath(); ctx.lineWidth=2; ctx.strokeStyle='#2d5a3d';
-    readings.forEach((r,i)=>{ const x=i*step,y=h-(Math.min(r.diff,maxDiff)/maxDiff)*h; i===0?ctx.moveTo(x,y):ctx.lineTo(x,y); });
-    ctx.stroke();
-    readings.forEach((r,i)=>{ const x=i*step,y=h-(Math.min(r.diff,maxDiff)/maxDiff)*h; ctx.beginPath(); ctx.arc(x,y,3,0,Math.PI*2); ctx.fillStyle=r.status==='same'?'#22c55e':'#ef4444'; ctx.fill(); });
-}
+(function () {
+    const readings = {{ report.readings | tojson }};
+    const THRESHOLD = {{ thr }};
+    const canvas = document.getElementById('reportGraph');
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.parentElement.offsetWidth - 32;
+    const w = canvas.width, h = canvas.height;
+    const vals = readings.map(r => r.de00 !== undefined ? r.de00 : r.diff);
+    const maxDiff = Math.max(THRESHOLD * 2, ...vals, 1) * 1.1;
+    ctx.fillStyle = '#f8f7f5'; ctx.fillRect(0, 0, w, h);
+    const ty = h - (THRESHOLD / maxDiff) * h;
+    ctx.strokeStyle = 'rgba(239,68,68,0.45)'; ctx.setLineDash([6, 4]); ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(0, ty); ctx.lineTo(w, ty); ctx.stroke(); ctx.setLineDash([]);
+    ctx.fillStyle = 'rgba(239,68,68,0.6)'; ctx.font = '11px monospace';
+    ctx.fillText('LIMIT ' + THRESHOLD, w - 90, ty - 5);
+    ctx.fillStyle = '#8a8f8b'; ctx.fillText(maxDiff.toFixed(1), 4, 12);
+    if (vals.length > 1) {
+        const step = w / (vals.length - 1);
+        ctx.beginPath(); ctx.lineWidth = 1.5; ctx.strokeStyle = '#2d5a3d';
+        vals.forEach((v, i) => { const x = i * step, y = h - (v / maxDiff) * h; i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+        ctx.stroke();
+        const dot = vals.length > 400 ? 1.5 : 3;
+        vals.forEach((v, i) => {
+            const x = i * step, y = h - (v / maxDiff) * h;
+            ctx.beginPath(); ctx.arc(x, y, dot, 0, Math.PI * 2);
+            ctx.fillStyle = readings[i].status === 'same' ? '#22c55e' : '#ef4444'; ctx.fill();
+        });
+    }
+})();
 function deleteReport(id) {
     if (!confirm("Delete this report?")) return;
-    fetch("/reports/" + id, { method: "DELETE" })
-        .then(r => r.json())
-        .then(() => window.location = "/check_color");
+    fetch("/reports/" + id, { method: "DELETE" }).then(() => window.location = "/check_color");
 }
 </script>
 {% endblock %}
