@@ -8,10 +8,11 @@ instead of a spectrophotometer.
 (a simplified browser version of the same method — indicative only; research
 measurements are made with this Python desktop system)
 
-**Author:** Md Rasel Khandaker · Supervisor: Dr. Siva Priya A/P Thiagarajah
+**Author:** Md Rasel Khandaker<br>
+**Supervisor:** Dr. Siva Priya A/P Thiagarajah<br>
 Faculty of Artificial Intelligence and Engineering, Multimedia University, Malaysia
 
-![The research system](docs/screenshot.png)
+![The research system](screenshot.png)
 
 ---
 
