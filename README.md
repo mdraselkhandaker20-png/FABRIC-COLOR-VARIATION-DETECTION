@@ -9,8 +9,7 @@ instead of a spectrophotometer.
 measurements are made with this Python desktop system)
 
 **Author:** Md Rasel Khandaker<br>
-**Supervisor:** Dr. Siva Priya A/P Thiagarajah<br>
-Faculty of Artificial Intelligence and Engineering, Multimedia University, Malaysia
+Multimedia University, Malaysia
 
 ![The research system](screenshot.png)
 
