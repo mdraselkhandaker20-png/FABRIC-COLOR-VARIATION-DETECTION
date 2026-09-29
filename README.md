@@ -11,7 +11,7 @@ measurements are made with this Python desktop system)
 **Author:** Md Rasel Khandaker<br>
 Multimedia University, Malaysia
 
-![The research system](screenshot.png)
+![The research system](templates/screenshot.png)
 
 ---
 
